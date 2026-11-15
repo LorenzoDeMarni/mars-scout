@@ -8,3 +8,7 @@ __pycache__/
 checkpoints/
 *.pt
 *.pth
+
+# presentation and submission-form material, kept out of the repo
+slides/
+submission/

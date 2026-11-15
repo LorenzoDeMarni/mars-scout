@@ -1,0 +1,6428 @@
+{
+ "note": "Replay of real Curiosity drives, sols 4600-4893. Terrain classes are model predictions, not ground truth.",
+ "classes": {
+  "soil": [
+   166,
+   118,
+   74
+  ],
+  "bedrock": [
+   70,
+   130,
+   220
+  ],
+  "sand": [
+   240,
+   200,
+   60
+  ],
+  "big rock": [
+   220,
+   50,
+   50
+  ]
+ },
+ "hazard_classes": [
+  "sand",
+  "big rock"
+ ],
+ "thresholds": {
+  "clear_below": 0.05,
+  "blocked_above": 0.25
+ },
+ "pins": [
+  {
+   "id": "sol4600_117_2370",
+   "sol": 4600,
+   "lat": -4.804189,
+   "lon": 137.3796858,
+   "elevation_m": -3632.878,
+   "rover_tilt_deg": 16.96,
+   "drive_m": 21.22,
+   "heading_to_next_deg": 199.2,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4600_117_2370_ahead",
+     "photo_id": "NLB_805867426EDR_F1172370NCAM00257M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04600/opgs/edr/ncam/NLB_805867426EDR_F1172370NCAM00257M_.JPG",
+     "photo_azimuth_deg": 190.8,
+     "status": "clear",
+     "ground": {
+      "soil": 0.675,
+      "bedrock": 0.301,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.342,
+     "model_confidence": 0.76,
+     "chosen_path": 2,
+     "straight_path": 2,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 9,
+      "rock_share": 0.054,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4600_117_2370_right",
+     "photo_id": "NLB_805867520EDR_F1172370NCAM00257M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04600/opgs/edr/ncam/NLB_805867520EDR_F1172370NCAM00257M_.JPG",
+     "photo_azimuth_deg": 275.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.695,
+      "bedrock": 0.029,
+      "sand": 0.197,
+      "big rock": 0.079
+     },
+     "rover_in_view": 0.2,
+     "model_confidence": 0.72,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.035,
+     "straight_hazard": 0.134,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there.",
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 12,
+      "rock_share": 0.067,
+      "smooth_share": 0.073
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4600_117_2370_behind",
+     "photo_id": "NLB_805866028EDR_F1172370NCAM00256M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04600/opgs/edr/ncam/NLB_805866028EDR_F1172370NCAM00256M_.JPG",
+     "photo_azimuth_deg": 7.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.134,
+      "bedrock": 0.858,
+      "sand": 0.004,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.76,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.044,
+     "straight_hazard": 0.075,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.04,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4600_117_2370_left",
+     "photo_id": "NLB_805866132EDR_F1172370NCAM00256M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04600/opgs/edr/ncam/NLB_805866132EDR_F1172370NCAM00256M_.JPG",
+     "photo_azimuth_deg": 105.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.029,
+      "bedrock": 0.957,
+      "sand": 0.0,
+      "big rock": 0.009
+     },
+     "rover_in_view": 0.016,
+     "model_confidence": 0.79,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.043,
+     "straight_hazard": 0.148,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 19,
+      "rock_share": 0.056,
+      "smooth_share": 0.003
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4602_117_2490",
+   "sol": 4602,
+   "lat": -4.80436679,
+   "lon": 137.3796237,
+   "elevation_m": -3630.754,
+   "rover_tilt_deg": 6.81,
+   "drive_m": 13.06,
+   "heading_to_next_deg": 224.8,
+   "status": "caution",
+   "status_direction": "left",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4602_117_2490_right",
+     "photo_id": "NLB_806041952EDR_F1172490NCAM00259M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04602/opgs/edr/ncam/NLB_806041952EDR_F1172490NCAM00259M_.JPG",
+     "photo_azimuth_deg": 320.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.753,
+      "bedrock": 0.155,
+      "sand": 0.065,
+      "big rock": 0.026
+     },
+     "rover_in_view": 0.237,
+     "model_confidence": 0.78,
+     "chosen_path": 5,
+     "straight_path": 4,
+     "chosen_hazard": 0.066,
+     "straight_hazard": 0.089,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 7% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 7,
+      "rock_share": 0.04,
+      "smooth_share": 0.01
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4602_117_2490_behind",
+     "photo_id": "NLB_806042060EDR_F1172490NCAM00259M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04602/opgs/edr/ncam/NLB_806042060EDR_F1172490NCAM00259M_.JPG",
+     "photo_azimuth_deg": 53.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.614,
+      "bedrock": 0.338,
+      "sand": 0.001,
+      "big rock": 0.043
+     },
+     "rover_in_view": 0.021,
+     "model_confidence": 0.78,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.031,
+     "straight_hazard": 0.134,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 27,
+      "rock_share": 0.074,
+      "smooth_share": 0.024
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4602_117_2490_left",
+     "photo_id": "NLB_806042735EDR_F1172490NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04602/opgs/edr/ncam/NLB_806042735EDR_F1172490NCAM00261M_.JPG",
+     "photo_azimuth_deg": 142.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.981,
+      "bedrock": 0.003,
+      "sand": 0.0,
+      "big rock": 0.008
+     },
+     "rover_in_view": 0.03,
+     "model_confidence": 0.93,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.004,
+     "straight_hazard": 0.072,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 13,
+      "rock_share": 0.038,
+      "smooth_share": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4605_117_2538",
+   "sol": 4605,
+   "lat": -4.80443344,
+   "lon": 137.3795572,
+   "elevation_m": -3631.479,
+   "rover_tilt_deg": 3.96,
+   "drive_m": 5.27,
+   "heading_to_next_deg": 217.6,
+   "status": "caution",
+   "status_direction": "behind",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4605_117_2538_right",
+     "photo_id": "NLB_806305433EDR_F1172538NCAM00263M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04605/opgs/edr/ncam/NLB_806305433EDR_F1172538NCAM00263M_.JPG",
+     "photo_azimuth_deg": 310.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.942,
+      "bedrock": 0.046,
+      "sand": 0.01,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.31,
+     "model_confidence": 0.89,
+     "chosen_path": 6,
+     "straight_path": 5,
+     "chosen_hazard": 0.068,
+     "straight_hazard": 0.102,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 7% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 9,
+      "rock_share": 0.033,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4605_117_2538_behind",
+     "photo_id": "NLB_806305529EDR_F1172538NCAM00263M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04605/opgs/edr/ncam/NLB_806305529EDR_F1172538NCAM00263M_.JPG",
+     "photo_azimuth_deg": 42.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.991,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.006
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.96,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.071,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.031,
+      "smooth_share": 0.002
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4605_117_2538_left",
+     "photo_id": "NLB_806306237EDR_F1172538NCAM00264M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04605/opgs/edr/ncam/NLB_806306237EDR_F1172538NCAM00264M_.JPG",
+     "photo_azimuth_deg": 131.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.772,
+      "bedrock": 0.221,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.026,
+     "model_confidence": 0.78,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.003,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.044,
+      "smooth_share": 0.006
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4609_117_2730",
+   "sol": 4609,
+   "lat": -4.80474015,
+   "lon": 137.3793204,
+   "elevation_m": -3624.329,
+   "rover_tilt_deg": 13.43,
+   "drive_m": 24.06,
+   "heading_to_next_deg": 186.8,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4609_117_2730_ahead",
+     "photo_id": "NLB_806661682EDR_F1172730NCAM00267M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04609/opgs/edr/ncam/NLB_806661682EDR_F1172730NCAM00267M_.JPG",
+     "photo_azimuth_deg": 180.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.345,
+      "bedrock": 0.655,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.282,
+     "model_confidence": 0.85,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.034,
+     "straight_hazard": 0.034,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 6,
+      "rock_share": 0.041,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4609_117_2730_right",
+     "photo_id": "NLB_806660624EDR_F1172730NCAM00266M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04609/opgs/edr/ncam/NLB_806660624EDR_F1172730NCAM00266M_.JPG",
+     "photo_azimuth_deg": 267.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.743,
+      "bedrock": 0.02,
+      "sand": 0.16,
+      "big rock": 0.074
+     },
+     "rover_in_view": 0.376,
+     "model_confidence": 0.75,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.014,
+     "straight_hazard": 0.051,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 17,
+      "rock_share": 0.055,
+      "smooth_share": 0.015
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4609_117_2730_behind",
+     "photo_id": "NLB_806660706EDR_F1172730NCAM00266M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04609/opgs/edr/ncam/NLB_806660706EDR_F1172730NCAM00266M_.JPG",
+     "photo_azimuth_deg": 3.8,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.997,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.99,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.023,
+      "smooth_share": 0.005
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4609_117_2730_left",
+     "photo_id": "NLB_806661584EDR_F1172730NCAM00267M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04609/opgs/edr/ncam/NLB_806661584EDR_F1172730NCAM00267M_.JPG",
+     "photo_azimuth_deg": 94.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.995,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.074,
+     "model_confidence": 0.95,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.014,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.02,
+      "smooth_share": 0.003
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4612_117_2850",
+   "sol": 4612,
+   "lat": -4.80494509,
+   "lon": 137.3792959,
+   "elevation_m": -3623.51,
+   "rover_tilt_deg": 10.04,
+   "drive_m": 13.25,
+   "heading_to_next_deg": 149.9,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4612_117_2850_ahead",
+     "photo_id": "NLB_806930298EDR_F1172850NCAM00270M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04612/opgs/edr/ncam/NLB_806930298EDR_F1172850NCAM00270M_.JPG",
+     "photo_azimuth_deg": 138.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.996,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.023,
+     "model_confidence": 0.99,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.036,
+     "straight_hazard": 0.121,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 17,
+      "rock_share": 0.05,
+      "smooth_share": 0.015
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4612_117_2850_behind",
+     "photo_id": "NLB_806929224EDR_F1172850NCAM00269M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04612/opgs/edr/ncam/NLB_806929224EDR_F1172850NCAM00269M_.JPG",
+     "photo_azimuth_deg": 342.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.074,
+      "bedrock": 0.919,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.93,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.031,
+     "straight_hazard": 0.058,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 10,
+      "rock_share": 0.027,
+      "smooth_share": 0.031
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4612_117_2850_left",
+     "photo_id": "NLB_806929288EDR_F1172850NCAM00269M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04612/opgs/edr/ncam/NLB_806929288EDR_F1172850NCAM00269M_.JPG",
+     "photo_azimuth_deg": 45.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.307,
+      "bedrock": 0.681,
+      "sand": 0.009,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.7,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.082,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 17,
+      "rock_share": 0.039,
+      "smooth_share": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4614_118_0",
+   "sol": 4614,
+   "lat": -4.80520603,
+   "lon": 137.3794477,
+   "elevation_m": -3622.376,
+   "rover_tilt_deg": 6.59,
+   "drive_m": 26.33,
+   "heading_to_next_deg": 162.7,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4614_118_0_ahead",
+     "photo_id": "NLB_807111625EDR_F1180000NCAM00273M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04614/opgs/edr/ncam/NLB_807111625EDR_F1180000NCAM00273M_.JPG",
+     "photo_azimuth_deg": 165.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.789,
+      "bedrock": 0.21,
+      "sand": 0.001,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.082,
+     "model_confidence": 0.82,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.119,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 22,
+      "rock_share": 0.073,
+      "smooth_share": 0.013
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4614_118_0_right",
+     "photo_id": "NLB_807111784EDR_F1180000NCAM00273M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04614/opgs/edr/ncam/NLB_807111784EDR_F1180000NCAM00273M_.JPG",
+     "photo_azimuth_deg": 253.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.154,
+      "bedrock": 0.528,
+      "sand": 0.09,
+      "big rock": 0.229
+     },
+     "rover_in_view": 0.331,
+     "model_confidence": 0.77,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.145,
+     "straight_hazard": 0.4,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 14% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.079,
+      "smooth_share": 0.13
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4614_118_0_behind",
+     "photo_id": "NLB_807111880EDR_F1180000NCAM00273M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04614/opgs/edr/ncam/NLB_807111880EDR_F1180000NCAM00273M_.JPG",
+     "photo_azimuth_deg": 343.2,
+     "status": "blocked",
+     "ground": {
+      "soil": 0.025,
+      "bedrock": 0.672,
+      "sand": 0.106,
+      "big rock": 0.186
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.73,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.279,
+     "straight_hazard": 0.423,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 17,
+      "rock_share": 0.053,
+      "smooth_share": 0.128
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4614_118_0_left",
+     "photo_id": "NLB_807110503EDR_F1180000NCAM00272M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04614/opgs/edr/ncam/NLB_807110503EDR_F1180000NCAM00272M_.JPG",
+     "photo_azimuth_deg": 76.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.985,
+      "bedrock": 0.002,
+      "sand": 0.0,
+      "big rock": 0.006
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.89,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.012,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 8% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.039,
+      "smooth_share": 0.022
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4616_118_162",
+   "sol": 4616,
+   "lat": -4.80545276,
+   "lon": 137.3795247,
+   "elevation_m": -3620.597,
+   "rover_tilt_deg": 7.41,
+   "drive_m": 15.83,
+   "heading_to_next_deg": 165.3,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4616_118_162_ahead",
+     "photo_id": "NLB_807286666EDR_F1180162NCAM00276M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04616/opgs/edr/ncam/NLB_807286666EDR_F1180162NCAM00276M_.JPG",
+     "photo_azimuth_deg": 150.9,
+     "status": "caution",
+     "ground": {
+      "soil": 1.0,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.034,
+     "model_confidence": 0.92,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.144,
+     "straight_hazard": 0.374,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 14% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.074,
+      "smooth_share": 0.044
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4616_118_162_right",
+     "photo_id": "NLB_807285914EDR_F1180162NCAM00275M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04616/opgs/edr/ncam/NLB_807285914EDR_F1180162NCAM00275M_.JPG",
+     "photo_azimuth_deg": 268.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.245,
+      "bedrock": 0.516,
+      "sand": 0.239,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.141,
+     "model_confidence": 0.64,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.083,
+     "straight_hazard": 0.143,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there.",
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 9,
+      "rock_share": 0.04,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4616_118_162_behind",
+     "photo_id": "NLB_807286001EDR_F1180162NCAM00275M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04616/opgs/edr/ncam/NLB_807286001EDR_F1180162NCAM00275M_.JPG",
+     "photo_azimuth_deg": 358.8,
+     "status": "clear",
+     "ground": {
+      "soil": 0.993,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.93,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.027,
+      "smooth_share": 0.027
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4616_118_162_left",
+     "photo_id": "NLB_807286571EDR_F1180162NCAM00276M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04616/opgs/edr/ncam/NLB_807286571EDR_F1180162NCAM00276M_.JPG",
+     "photo_azimuth_deg": 61.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.983,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.013
+     },
+     "rover_in_view": 0.005,
+     "model_confidence": 0.92,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.065,
+     "straight_hazard": 0.11,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 23,
+      "rock_share": 0.077,
+      "smooth_share": 0.023
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4618_118_198",
+   "sol": 4618,
+   "lat": -4.80549507,
+   "lon": 137.3795358,
+   "elevation_m": -3620.486,
+   "rover_tilt_deg": 9.85,
+   "drive_m": 3.61,
+   "heading_to_next_deg": 344.0,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4618_118_198_ahead",
+     "photo_id": "NLB_807464288EDR_F1180198NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04618/opgs/edr/ncam/NLB_807464288EDR_F1180198NCAM00280M_.JPG",
+     "photo_azimuth_deg": 342.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.949,
+      "bedrock": 0.005,
+      "sand": 0.0,
+      "big rock": 0.041
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.9,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.018,
+     "straight_hazard": 0.018,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 26,
+      "rock_share": 0.067,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4618_118_198_right",
+     "photo_id": "NLB_807464383EDR_F1180198NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04618/opgs/edr/ncam/NLB_807464383EDR_F1180198NCAM00280M_.JPG",
+     "photo_azimuth_deg": 71.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.993,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.009,
+     "model_confidence": 0.95,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.005,
+     "straight_hazard": 0.054,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 18% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 22,
+      "rock_share": 0.085,
+      "smooth_share": 0.088
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4618_118_198_behind",
+     "photo_id": "NLB_807463416EDR_F1180198NCAM00279M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04618/opgs/edr/ncam/NLB_807463416EDR_F1180198NCAM00279M_.JPG",
+     "photo_azimuth_deg": 158.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.853,
+      "bedrock": 0.108,
+      "sand": 0.039,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.026,
+     "model_confidence": 0.84,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.01,
+     "straight_hazard": 0.01,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.02,
+      "smooth_share": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4621_118_372",
+   "sol": 4621,
+   "lat": -4.80541391,
+   "lon": 137.3795125,
+   "elevation_m": -3620.089,
+   "rover_tilt_deg": 4.8,
+   "drive_m": 14.62,
+   "heading_to_next_deg": 99.8,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4621_118_372_ahead",
+     "photo_id": "NLB_807729480EDR_F1180372NCAM00282M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04621/opgs/edr/ncam/NLB_807729480EDR_F1180372NCAM00282M_.JPG",
+     "photo_azimuth_deg": 90.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.665,
+      "bedrock": 0.32,
+      "sand": 0.0,
+      "big rock": 0.006
+     },
+     "rover_in_view": 0.008,
+     "model_confidence": 0.74,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.037,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 14,
+      "rock_share": 0.026,
+      "smooth_share": 0.011
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4621_118_372_right",
+     "photo_id": "NLB_807730725EDR_F1180372NCAM00283M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04621/opgs/edr/ncam/NLB_807730725EDR_F1180372NCAM00283M_.JPG",
+     "photo_azimuth_deg": 180.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.985,
+      "bedrock": 0.015,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.354,
+     "model_confidence": 0.83,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.023,
+     "straight_hazard": 0.145,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 13% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 5,
+      "rock_share": 0.043,
+      "smooth_share": 0.042
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4621_118_372_behind",
+     "photo_id": "NLB_807730878EDR_F1180372NCAM00283M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04621/opgs/edr/ncam/NLB_807730878EDR_F1180372NCAM00283M_.JPG",
+     "photo_azimuth_deg": 268.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.537,
+      "bedrock": 0.358,
+      "sand": 0.104,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.214,
+     "model_confidence": 0.74,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.021,
+     "straight_hazard": 0.03,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 24% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 13,
+      "rock_share": 0.077,
+      "smooth_share": 0.107
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4621_118_372_left",
+     "photo_id": "NLB_807729392EDR_F1180372NCAM00282M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04621/opgs/edr/ncam/NLB_807729392EDR_F1180372NCAM00282M_.JPG",
+     "photo_azimuth_deg": 357.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.057,
+      "bedrock": 0.879,
+      "sand": 0.05,
+      "big rock": 0.01
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.77,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.007,
+     "straight_hazard": 0.072,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 13,
+      "rock_share": 0.045,
+      "smooth_share": 0.002
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4623_118_534",
+   "sol": 4623,
+   "lat": -4.80548391,
+   "lon": 137.3799173,
+   "elevation_m": -3621.591,
+   "rover_tilt_deg": 7.41,
+   "drive_m": 24.52,
+   "heading_to_next_deg": 202.9,
+   "status": "caution",
+   "status_direction": "right",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4623_118_534_right",
+     "photo_id": "NLB_807902005EDR_F1180534NCAM00286M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04623/opgs/edr/ncam/NLB_807902005EDR_F1180534NCAM00286M_.JPG",
+     "photo_azimuth_deg": 303.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.57,
+      "bedrock": 0.398,
+      "sand": 0.023,
+      "big rock": 0.008
+     },
+     "rover_in_view": 0.231,
+     "model_confidence": 0.64,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.079,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.058,
+      "smooth_share": 0.02
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4623_118_534_behind",
+     "photo_id": "NLB_807900823EDR_F1180534NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04623/opgs/edr/ncam/NLB_807900823EDR_F1180534NCAM00285M_.JPG",
+     "photo_azimuth_deg": 34.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.311,
+      "bedrock": 0.689,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.033,
+     "model_confidence": 0.78,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.011,
+     "straight_hazard": 0.076,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 16,
+      "rock_share": 0.046,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4623_118_534_left",
+     "photo_id": "NLB_807900911EDR_F1180534NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04623/opgs/edr/ncam/NLB_807900911EDR_F1180534NCAM00285M_.JPG",
+     "photo_azimuth_deg": 127.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.97,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.091,
+     "straight_hazard": 0.149,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 9% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 13,
+      "rock_share": 0.041,
+      "smooth_share": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4625_118_762",
+   "sol": 4625,
+   "lat": -4.80585913,
+   "lon": 137.3797583,
+   "elevation_m": -3617.654,
+   "rover_tilt_deg": 9.83,
+   "drive_m": 25.51,
+   "heading_to_next_deg": 246.2,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4625_118_762_ahead",
+     "photo_id": "NLB_808084991EDR_F1180762NCAM00290M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04625/opgs/edr/ncam/NLB_808084991EDR_F1180762NCAM00290M_.JPG",
+     "photo_azimuth_deg": 242.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.195,
+      "bedrock": 0.805,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.354,
+     "model_confidence": 0.66,
+     "chosen_path": 4,
+     "straight_path": 4,
+     "chosen_hazard": 0.065,
+     "straight_hazard": 0.065,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 5,
+      "rock_share": 0.032,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4625_118_762_right",
+     "photo_id": "NLB_808083714EDR_F1180762NCAM00289M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04625/opgs/edr/ncam/NLB_808083714EDR_F1180762NCAM00289M_.JPG",
+     "photo_azimuth_deg": 333.5,
+     "status": "clear",
+     "ground": {
+      "soil": 0.926,
+      "bedrock": 0.068,
+      "sand": 0.004,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.097,
+     "model_confidence": 0.8,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.015,
+     "straight_hazard": 0.019,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.022,
+      "smooth_share": 0.023
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4625_118_762_behind",
+     "photo_id": "NLB_808083803EDR_F1180762NCAM00289M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04625/opgs/edr/ncam/NLB_808083803EDR_F1180762NCAM00289M_.JPG",
+     "photo_azimuth_deg": 68.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.142,
+      "bedrock": 0.832,
+      "sand": 0.0,
+      "big rock": 0.022
+     },
+     "rover_in_view": 0.009,
+     "model_confidence": 0.71,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.069,
+     "straight_hazard": 0.076,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 7% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.037,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4625_118_762_left",
+     "photo_id": "NLB_808084807EDR_F1180762NCAM00290M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04625/opgs/edr/ncam/NLB_808084807EDR_F1180762NCAM00290M_.JPG",
+     "photo_azimuth_deg": 126.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.567,
+      "bedrock": 0.426,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.049,
+     "model_confidence": 0.64,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.014,
+     "straight_hazard": 0.018,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.043,
+      "smooth_share": 0.009
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4629_118_1194",
+   "sol": 4629,
+   "lat": -4.80616679,
+   "lon": 137.379723,
+   "elevation_m": -3613.975,
+   "rover_tilt_deg": 12.08,
+   "drive_m": 32.38,
+   "heading_to_next_deg": 189.5,
+   "status": "clear",
+   "status_direction": "left",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "behind",
+     "name": "sol4629_118_1194_behind",
+     "photo_id": "NLB_808440376EDR_F1181194NCAM00295M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04629/opgs/edr/ncam/NLB_808440376EDR_F1181194NCAM00295M_.JPG",
+     "photo_azimuth_deg": 355.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.011,
+      "bedrock": 0.521,
+      "sand": 0.0,
+      "big rock": 0.465
+     },
+     "rover_in_view": 0.032,
+     "model_confidence": 0.8,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.164,
+     "straight_hazard": 0.167,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 37% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 21,
+      "rock_share": 0.108,
+      "smooth_share": 0.214
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4629_118_1194_left",
+     "photo_id": "NLB_808441423EDR_F1181194NCAM00296M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04629/opgs/edr/ncam/NLB_808441423EDR_F1181194NCAM00296M_.JPG",
+     "photo_azimuth_deg": 85.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.216,
+      "bedrock": 0.779,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.044,
+     "model_confidence": 0.85,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.023,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 15,
+      "rock_share": 0.064,
+      "smooth_share": 0.139
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4633_118_1350",
+   "sol": 4633,
+   "lat": -4.80645796,
+   "lon": 137.3796739,
+   "elevation_m": -3611.188,
+   "rover_tilt_deg": 13.64,
+   "drive_m": 19.43,
+   "heading_to_next_deg": 280.4,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4633_118_1350_ahead",
+     "photo_id": "NLB_808788277EDR_F1181350NCAM00299M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04633/opgs/edr/ncam/NLB_808788277EDR_F1181350NCAM00299M_.JPG",
+     "photo_azimuth_deg": 267.5,
+     "status": "clear",
+     "ground": {
+      "soil": 0.014,
+      "bedrock": 0.985,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.206,
+     "model_confidence": 0.95,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.023,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4633_118_1350_right",
+     "photo_id": "NLB_808788356EDR_F1181350NCAM00299M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04633/opgs/edr/ncam/NLB_808788356EDR_F1181350NCAM00299M_.JPG",
+     "photo_azimuth_deg": 0.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.996,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.98,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.023,
+      "smooth_share": 0.006
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4633_118_1350_behind",
+     "photo_id": "NLB_808787533EDR_F1181350NCAM00298M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04633/opgs/edr/ncam/NLB_808787533EDR_F1181350NCAM00298M_.JPG",
+     "photo_azimuth_deg": 95.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.009,
+      "bedrock": 0.988,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.96,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.008,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 9,
+      "rock_share": 0.026,
+      "smooth_share": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4634_118_1608",
+   "sol": 4634,
+   "lat": -4.80635617,
+   "lon": 137.3791167,
+   "elevation_m": -3609.909,
+   "rover_tilt_deg": 17.53,
+   "drive_m": 34.97,
+   "heading_to_next_deg": 129.5,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4634_118_1608_ahead",
+     "photo_id": "NLB_808884327EDR_F1181608NCAM00252M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04634/opgs/edr/ncam/NLB_808884327EDR_F1181608NCAM00252M_.JPG",
+     "photo_azimuth_deg": 89.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.029,
+      "bedrock": 0.841,
+      "sand": 0.0,
+      "big rock": 0.119
+     },
+     "rover_in_view": 0.052,
+     "model_confidence": 0.71,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.253,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 16,
+      "rock_share": 0.057,
+      "smooth_share": 0.033
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4634_118_1608_behind",
+     "photo_id": "NLB_808884192EDR_F1181608NCAM00252M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04634/opgs/edr/ncam/NLB_808884192EDR_F1181608NCAM00252M_.JPG",
+     "photo_azimuth_deg": 322.1,
+     "status": "blocked",
+     "ground": {
+      "soil": 0.001,
+      "bedrock": 0.152,
+      "sand": 0.068,
+      "big rock": 0.778
+     },
+     "rover_in_view": 0.376,
+     "model_confidence": 0.87,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.79,
+     "straight_hazard": 0.846,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.02,
+      "smooth_share": 0.168
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4634_118_1608_left",
+     "photo_id": "NLB_808884272EDR_F1181608NCAM00252M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04634/opgs/edr/ncam/NLB_808884272EDR_F1181608NCAM00252M_.JPG",
+     "photo_azimuth_deg": 30.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.012,
+      "bedrock": 0.926,
+      "sand": 0.024,
+      "big rock": 0.037
+     },
+     "rover_in_view": 0.028,
+     "model_confidence": 0.85,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.053,
+     "straight_hazard": 0.096,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there.",
+       "Edge check finds smooth ground on 35% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 22,
+      "rock_share": 0.064,
+      "smooth_share": 0.286
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4636_118_1752",
+   "sol": 4636,
+   "lat": -4.80653823,
+   "lon": 137.3793381,
+   "elevation_m": -3607.128,
+   "rover_tilt_deg": 13.27,
+   "drive_m": 18.32,
+   "heading_to_next_deg": 234.2,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4636_118_1752_ahead",
+     "photo_id": "NLB_809061642EDR_F1181752NCAM00255M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04636/opgs/edr/ncam/NLB_809061642EDR_F1181752NCAM00255M_.JPG",
+     "photo_azimuth_deg": 192.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.671,
+      "bedrock": 0.329,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.394,
+     "model_confidence": 0.61,
+     "chosen_path": 1,
+     "straight_path": 1,
+     "chosen_hazard": 0.062,
+     "straight_hazard": 0.062,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 7,
+      "rock_share": 0.049,
+      "smooth_share": 0.013
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4636_118_1752_right",
+     "photo_id": "NLB_809060444EDR_F1181752NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04636/opgs/edr/ncam/NLB_809060444EDR_F1181752NCAM00254M_.JPG",
+     "photo_azimuth_deg": 335.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.618,
+      "bedrock": 0.288,
+      "sand": 0.094,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.029,
+     "model_confidence": 0.78,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.031,
+     "straight_hazard": 0.104,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.049,
+      "smooth_share": 0.078
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4636_118_1752_behind",
+     "photo_id": "NLB_809060508EDR_F1181752NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04636/opgs/edr/ncam/NLB_809060508EDR_F1181752NCAM00254M_.JPG",
+     "photo_azimuth_deg": 38.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.599,
+      "bedrock": 0.356,
+      "sand": 0.0,
+      "big rock": 0.041
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.8,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.045,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 10,
+      "rock_share": 0.038,
+      "smooth_share": 0.028
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4636_118_1752_left",
+     "photo_id": "NLB_809061520EDR_F1181752NCAM00255M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04636/opgs/edr/ncam/NLB_809061520EDR_F1181752NCAM00255M_.JPG",
+     "photo_azimuth_deg": 134.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.114,
+      "bedrock": 0.859,
+      "sand": 0.0,
+      "big rock": 0.025
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.81,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.042,
+     "straight_hazard": 0.1,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 21,
+      "rock_share": 0.05,
+      "smooth_share": 0.004
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4641_118_1944",
+   "sol": 4641,
+   "lat": -4.80669051,
+   "lon": 137.3793537,
+   "elevation_m": -3608.108,
+   "rover_tilt_deg": 13.3,
+   "drive_m": 15.68,
+   "heading_to_next_deg": 151.2,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4641_118_1944_ahead",
+     "photo_id": "NLB_809505746EDR_F1181944NCAM00262M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04641/opgs/edr/ncam/NLB_809505746EDR_F1181944NCAM00262M_.JPG",
+     "photo_azimuth_deg": 150.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.59,
+      "bedrock": 0.067,
+      "sand": 0.0,
+      "big rock": 0.338
+     },
+     "rover_in_view": 0.05,
+     "model_confidence": 0.81,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.186,
+     "straight_hazard": 0.34,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 16,
+      "rock_share": 0.06,
+      "smooth_share": 0.006
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4641_118_1944_right",
+     "photo_id": "NLB_809504312EDR_F1181944NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04641/opgs/edr/ncam/NLB_809504312EDR_F1181944NCAM00261M_.JPG",
+     "photo_azimuth_deg": 265.2,
+     "status": "caution",
+     "ground": {
+      "soil": 1.0,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.14,
+     "model_confidence": 0.94,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.055,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 20% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 21,
+      "rock_share": 0.081,
+      "smooth_share": 0.135
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4641_118_1944_behind",
+     "photo_id": "NLB_809504375EDR_F1181944NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04641/opgs/edr/ncam/NLB_809504375EDR_F1181944NCAM00261M_.JPG",
+     "photo_azimuth_deg": 324.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.998,
+      "bedrock": 0.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.188,
+     "model_confidence": 0.94,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.011,
+     "straight_hazard": 0.056,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 35,
+      "rock_share": 0.076,
+      "smooth_share": 0.052
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4641_118_1944_left",
+     "photo_id": "NLB_809505645EDR_F1181944NCAM00262M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04641/opgs/edr/ncam/NLB_809505645EDR_F1181944NCAM00262M_.JPG",
+     "photo_azimuth_deg": 61.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.752,
+      "bedrock": 0.135,
+      "sand": 0.008,
+      "big rock": 0.1
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.82,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.044,
+     "straight_hazard": 0.083,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 22,
+      "rock_share": 0.054,
+      "smooth_share": 0.003
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4643_118_2028",
+   "sol": 4643,
+   "lat": -4.80679651,
+   "lon": 137.3794121,
+   "elevation_m": -3604.677,
+   "rover_tilt_deg": 13.24,
+   "drive_m": 8.23,
+   "heading_to_next_deg": 103.3,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4643_118_2028_ahead",
+     "photo_id": "NLB_809681596EDR_F1182028NCAM00265M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04643/opgs/edr/ncam/NLB_809681596EDR_F1182028NCAM00265M_.JPG",
+     "photo_azimuth_deg": 115.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.501,
+      "bedrock": 0.456,
+      "sand": 0.035,
+      "big rock": 0.003
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.93,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.005,
+     "straight_hazard": 0.088,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 10% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 19,
+      "rock_share": 0.054,
+      "smooth_share": 0.026
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4643_118_2028_behind",
+     "photo_id": "NLB_809681805EDR_F1182028NCAM00265M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04643/opgs/edr/ncam/NLB_809681805EDR_F1182028NCAM00265M_.JPG",
+     "photo_azimuth_deg": 272.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.441,
+      "bedrock": 0.438,
+      "sand": 0.0,
+      "big rock": 0.12
+     },
+     "rover_in_view": 0.278,
+     "model_confidence": 0.83,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.006,
+     "straight_hazard": 0.075,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 10% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.056,
+      "smooth_share": 0.015
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4643_118_2028_left",
+     "photo_id": "NLB_809681009EDR_F1182028NCAM00264M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04643/opgs/edr/ncam/NLB_809681009EDR_F1182028NCAM00264M_.JPG",
+     "photo_azimuth_deg": 25.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.087,
+      "bedrock": 0.878,
+      "sand": 0.012,
+      "big rock": 0.007
+     },
+     "rover_in_view": 0.011,
+     "model_confidence": 0.86,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 4,
+      "rock_share": 0.02,
+      "smooth_share": 0.024
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4647_118_2268",
+   "sol": 4647,
+   "lat": -4.80689063,
+   "lon": 137.3798121,
+   "elevation_m": -3610.488,
+   "rover_tilt_deg": 8.33,
+   "drive_m": 27.48,
+   "heading_to_next_deg": 94.2,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4647_118_2268_ahead",
+     "photo_id": "NLB_810035905EDR_F1182268NCAM00268M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04647/opgs/edr/ncam/NLB_810035905EDR_F1182268NCAM00268M_.JPG",
+     "photo_azimuth_deg": 102.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.37,
+      "bedrock": 0.579,
+      "sand": 0.048,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.64,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.045,
+     "straight_hazard": 0.062,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.041,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4647_118_2268_behind",
+     "photo_id": "NLB_810034800EDR_F1182268NCAM00267M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04647/opgs/edr/ncam/NLB_810034800EDR_F1182268NCAM00267M_.JPG",
+     "photo_azimuth_deg": 281.6,
+     "status": "clear",
+     "ground": {
+      "soil": 0.348,
+      "bedrock": 0.652,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.15,
+     "model_confidence": 0.67,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.012,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.045,
+      "smooth_share": 0.006
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4647_118_2268_left",
+     "photo_id": "NLB_810034887EDR_F1182268NCAM00267M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04647/opgs/edr/ncam/NLB_810034887EDR_F1182268NCAM00267M_.JPG",
+     "photo_azimuth_deg": 9.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.192,
+      "bedrock": 0.803,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.72,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.023,
+      "smooth_share": 0.053
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4650_118_2304",
+   "sol": 4650,
+   "lat": -4.8068928,
+   "lon": 137.3798418,
+   "elevation_m": -3610.513,
+   "rover_tilt_deg": 11.93,
+   "drive_m": 1.9,
+   "heading_to_next_deg": 163.9,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4650_118_2304_ahead",
+     "photo_id": "NLB_810299454EDR_F1182304NCAM00271M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04650/opgs/edr/ncam/NLB_810299454EDR_F1182304NCAM00271M_.JPG",
+     "photo_azimuth_deg": 150.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.475,
+      "bedrock": 0.524,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.127,
+     "model_confidence": 0.74,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.047,
+     "straight_hazard": 0.143,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.06,
+      "smooth_share": 0.015
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4650_118_2304_behind",
+     "photo_id": "NLB_810298299EDR_F1182304NCAM00270M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04650/opgs/edr/ncam/NLB_810298299EDR_F1182304NCAM00270M_.JPG",
+     "photo_azimuth_deg": 356.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.974,
+      "bedrock": 0.019,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.92,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.018,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 15,
+      "rock_share": 0.039,
+      "smooth_share": 0.016
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4650_118_2304_left",
+     "photo_id": "NLB_810298385EDR_F1182304NCAM00270M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04650/opgs/edr/ncam/NLB_810298385EDR_F1182304NCAM00270M_.JPG",
+     "photo_azimuth_deg": 85.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.068,
+      "bedrock": 0.929,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.87,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.005,
+     "straight_hazard": 0.005,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 13,
+      "rock_share": 0.034,
+      "smooth_share": 0.006
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4653_118_2466",
+   "sol": 4653,
+   "lat": -4.80708025,
+   "lon": 137.3798962,
+   "elevation_m": -3607.997,
+   "rover_tilt_deg": 10.0,
+   "drive_m": 17.26,
+   "heading_to_next_deg": 180.4,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4653_118_2466_ahead",
+     "photo_id": "NLB_810569140EDR_F1182466NCAM00274M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04653/opgs/edr/ncam/NLB_810569140EDR_F1182466NCAM00274M_.JPG",
+     "photo_azimuth_deg": 146.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.637,
+      "bedrock": 0.332,
+      "sand": 0.0,
+      "big rock": 0.025
+     },
+     "rover_in_view": 0.05,
+     "model_confidence": 0.78,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.046,
+     "straight_hazard": 0.046,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 20,
+      "rock_share": 0.071,
+      "smooth_share": 0.054
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4653_118_2466_right",
+     "photo_id": "NLB_810569317EDR_F1182466NCAM00274M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04653/opgs/edr/ncam/NLB_810569317EDR_F1182466NCAM00274M_.JPG",
+     "photo_azimuth_deg": 261.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.786,
+      "bedrock": 0.118,
+      "sand": 0.061,
+      "big rock": 0.036
+     },
+     "rover_in_view": 0.236,
+     "model_confidence": 0.65,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.042,
+     "straight_hazard": 0.095,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 5,
+      "rock_share": 0.021,
+      "smooth_share": 0.008
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4653_118_2466_behind",
+     "photo_id": "NLB_810568075EDR_F1182466NCAM00273M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04653/opgs/edr/ncam/NLB_810568075EDR_F1182466NCAM00273M_.JPG",
+     "photo_azimuth_deg": 353.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.242,
+      "bedrock": 0.68,
+      "sand": 0.076,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.001,
+     "model_confidence": 0.72,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.028,
+     "straight_hazard": 0.056,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 21,
+      "rock_share": 0.053,
+      "smooth_share": 0.028
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4653_118_2466_left",
+     "photo_id": "NLB_810569077EDR_F1182466NCAM00274M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04653/opgs/edr/ncam/NLB_810569077EDR_F1182466NCAM00274M_.JPG",
+     "photo_azimuth_deg": 88.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.202,
+      "bedrock": 0.797,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.82,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.031,
+     "straight_hazard": 0.088,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 16,
+      "rock_share": 0.044,
+      "smooth_share": 0.034
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4655_118_2538",
+   "sol": 4655,
+   "lat": -4.80716832,
+   "lon": 137.3798956,
+   "elevation_m": -3607.704,
+   "rover_tilt_deg": 4.71,
+   "drive_m": 5.19,
+   "heading_to_next_deg": 149.9,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4655_118_2538_ahead",
+     "photo_id": "NLB_810748653EDR_F1182538NCAM00277M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04655/opgs/edr/ncam/NLB_810748653EDR_F1182538NCAM00277M_.JPG",
+     "photo_azimuth_deg": 158.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.501,
+      "bedrock": 0.498,
+      "sand": 0.0,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.106,
+     "model_confidence": 0.67,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.026,
+     "straight_hazard": 0.102,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 25,
+      "rock_share": 0.078,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4655_118_2538_right",
+     "photo_id": "NLB_810748798EDR_F1182538NCAM00277M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04655/opgs/edr/ncam/NLB_810748798EDR_F1182538NCAM00277M_.JPG",
+     "photo_azimuth_deg": 248.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.647,
+      "bedrock": 0.341,
+      "sand": 0.012,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.323,
+     "model_confidence": 0.69,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.054,
+     "straight_hazard": 0.067,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 8,
+      "rock_share": 0.04,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4655_118_2538_behind",
+     "photo_id": "NLB_810747499EDR_F1182538NCAM00276M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04655/opgs/edr/ncam/NLB_810747499EDR_F1182538NCAM00276M_.JPG",
+     "photo_azimuth_deg": 336.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.195,
+      "bedrock": 0.75,
+      "sand": 0.006,
+      "big rock": 0.042
+     },
+     "rover_in_view": 0.005,
+     "model_confidence": 0.81,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.113,
+     "straight_hazard": 0.113,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 11% of the chosen path; the model sees no big rock there.",
+       "Edge check finds smooth ground on 20% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.06,
+      "smooth_share": 0.132
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4655_118_2538_left",
+     "photo_id": "NLB_810747593EDR_F1182538NCAM00276M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04655/opgs/edr/ncam/NLB_810747593EDR_F1182538NCAM00276M_.JPG",
+     "photo_azimuth_deg": 66.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.875,
+      "bedrock": 0.075,
+      "sand": 0.0,
+      "big rock": 0.045
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.75,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.027,
+     "straight_hazard": 0.027,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 16,
+      "rock_share": 0.036,
+      "smooth_share": 0.034
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4660_118_2742",
+   "sol": 4660,
+   "lat": -4.80745212,
+   "lon": 137.3800604,
+   "elevation_m": -3605.483,
+   "rover_tilt_deg": 8.2,
+   "drive_m": 21.24,
+   "heading_to_next_deg": 143.8,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4660_118_2742_ahead",
+     "photo_id": "NLB_811179971EDR_F1182742NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04660/opgs/edr/ncam/NLB_811179971EDR_F1182742NCAM00280M_.JPG",
+     "photo_azimuth_deg": 129.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.806,
+      "sand": 0.161,
+      "big rock": 0.032
+     },
+     "rover_in_view": 0.001,
+     "model_confidence": 0.93,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.059,
+     "straight_hazard": 0.232,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.032,
+      "smooth_share": 0.1
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4660_118_2742_right",
+     "photo_id": "NLB_811180148EDR_F1182742NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04660/opgs/edr/ncam/NLB_811180148EDR_F1182742NCAM00280M_.JPG",
+     "photo_azimuth_deg": 245.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.166,
+      "bedrock": 0.834,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.252,
+     "model_confidence": 0.87,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.156,
+     "straight_hazard": 0.156,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 16% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 4,
+      "rock_share": 0.029,
+      "smooth_share": 0.074
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4660_118_2742_behind",
+     "photo_id": "NLB_811178948EDR_F1182742NCAM00279M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04660/opgs/edr/ncam/NLB_811178948EDR_F1182742NCAM00279M_.JPG",
+     "photo_azimuth_deg": 334.5,
+     "status": "clear",
+     "ground": {
+      "soil": 0.098,
+      "bedrock": 0.892,
+      "sand": 0.009,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.06,
+     "model_confidence": 0.87,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.018,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 9,
+      "rock_share": 0.024,
+      "smooth_share": 0.032
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4660_118_2742_left",
+     "photo_id": "NLB_811179030EDR_F1182742NCAM00279M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04660/opgs/edr/ncam/NLB_811179030EDR_F1182742NCAM00279M_.JPG",
+     "photo_azimuth_deg": 68.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.123,
+      "bedrock": 0.659,
+      "sand": 0.139,
+      "big rock": 0.078
+     },
+     "rover_in_view": 0.001,
+     "model_confidence": 0.84,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.055,
+     "straight_hazard": 0.177,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 10,
+      "rock_share": 0.022,
+      "smooth_share": 0.095
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4662_118_2832",
+   "sol": 4662,
+   "lat": -4.80762759,
+   "lon": 137.3801893,
+   "elevation_m": -3606.064,
+   "rover_tilt_deg": 8.63,
+   "drive_m": 12.75,
+   "heading_to_next_deg": 168.7,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4662_118_2832_ahead",
+     "photo_id": "NLB_811355779EDR_F1182832NCAM00283M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04662/opgs/edr/ncam/NLB_811355779EDR_F1182832NCAM00283M_.JPG",
+     "photo_azimuth_deg": 182.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.914,
+      "bedrock": 0.086,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.271,
+     "model_confidence": 0.96,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.037,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4662_118_2832_right",
+     "photo_id": "NLB_811355871EDR_F1182832NCAM00283M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04662/opgs/edr/ncam/NLB_811355871EDR_F1182832NCAM00283M_.JPG",
+     "photo_azimuth_deg": 269.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.549,
+      "bedrock": 0.447,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.205,
+     "model_confidence": 0.78,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.037,
+     "straight_hazard": 0.049,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there.",
+       "Edge check finds smooth ground on 33% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 17,
+      "rock_share": 0.09,
+      "smooth_share": 0.223
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4662_118_2832_behind",
+     "photo_id": "NLB_811354691EDR_F1182832NCAM00282M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04662/opgs/edr/ncam/NLB_811354691EDR_F1182832NCAM00282M_.JPG",
+     "photo_azimuth_deg": 360.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.239,
+      "bedrock": 0.758,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.008,
+     "model_confidence": 0.77,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.003,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.018,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4662_118_2832_left",
+     "photo_id": "NLB_811355642EDR_F1182832NCAM00283M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04662/opgs/edr/ncam/NLB_811355642EDR_F1182832NCAM00283M_.JPG",
+     "photo_azimuth_deg": 94.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.918,
+      "bedrock": 0.034,
+      "sand": 0.0,
+      "big rock": 0.046
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.88,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.096,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 4,
+      "rock_share": 0.008,
+      "smooth_share": 0.052
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4664_118_3156",
+   "sol": 4664,
+   "lat": -4.8079252,
+   "lon": 137.3802489,
+   "elevation_m": -3605.206,
+   "rover_tilt_deg": 5.63,
+   "drive_m": 35.69,
+   "heading_to_next_deg": 110.8,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4664_118_3156_ahead",
+     "photo_id": "NLB_811538997EDR_F1183156NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04664/opgs/edr/ncam/NLB_811538997EDR_F1183156NCAM00285M_.JPG",
+     "photo_azimuth_deg": 116.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.075,
+      "bedrock": 0.923,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.85,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.036,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.026,
+      "smooth_share": 0.023
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4664_118_3156_behind",
+     "photo_id": "NLB_811540240EDR_F1183156NCAM00286M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04664/opgs/edr/ncam/NLB_811540240EDR_F1183156NCAM00286M_.JPG",
+     "photo_azimuth_deg": 297.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.696,
+      "bedrock": 0.304,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.249,
+     "model_confidence": 0.78,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.053,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 10% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.056,
+      "smooth_share": 0.064
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4664_118_3156_left",
+     "photo_id": "NLB_811538911EDR_F1183156NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04664/opgs/edr/ncam/NLB_811538911EDR_F1183156NCAM00285M_.JPG",
+     "photo_azimuth_deg": 25.6,
+     "status": "clear",
+     "ground": {
+      "soil": 0.024,
+      "bedrock": 0.973,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.009,
+     "model_confidence": 0.96,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.021,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 3,
+      "rock_share": 0.008,
+      "smooth_share": 0.03
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4667_119_0",
+   "sol": 4667,
+   "lat": -4.80802327,
+   "lon": 137.3805074,
+   "elevation_m": -3604.77,
+   "rover_tilt_deg": 8.16,
+   "drive_m": 17.47,
+   "heading_to_next_deg": 94.4,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4667_119_0_ahead",
+     "photo_id": "NLB_811807322EDR_F1190000NCAM00289M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04667/opgs/edr/ncam/NLB_811807322EDR_F1190000NCAM00289M_.JPG",
+     "photo_azimuth_deg": 99.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.99,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.019,
+     "straight_hazard": 0.019,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.018,
+      "smooth_share": 0.007
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4667_119_0_behind",
+     "photo_id": "NLB_811807563EDR_F1190000NCAM00289M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04667/opgs/edr/ncam/NLB_811807563EDR_F1190000NCAM00289M_.JPG",
+     "photo_azimuth_deg": 279.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.119,
+      "bedrock": 0.881,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.147,
+     "model_confidence": 0.77,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.032,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.029,
+      "smooth_share": 0.077
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4667_119_0_left",
+     "photo_id": "NLB_811806355EDR_F1190000NCAM00288M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04667/opgs/edr/ncam/NLB_811806355EDR_F1190000NCAM00288M_.JPG",
+     "photo_azimuth_deg": 7.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.078,
+      "bedrock": 0.919,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.91,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.029,
+     "straight_hazard": 0.036,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 13,
+      "rock_share": 0.032,
+      "smooth_share": 0.023
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4669_119_198",
+   "sol": 4669,
+   "lat": -4.80805222,
+   "lon": 137.380883,
+   "elevation_m": -3606.525,
+   "rover_tilt_deg": 7.37,
+   "drive_m": 26.48,
+   "heading_to_next_deg": 119.6,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4669_119_198_ahead",
+     "photo_id": "NLB_811979432EDR_F1190198NCAM00291M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04669/opgs/edr/ncam/NLB_811979432EDR_F1190198NCAM00291M_.JPG",
+     "photo_azimuth_deg": 110.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.583,
+      "bedrock": 0.41,
+      "sand": 0.003,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.005,
+     "model_confidence": 0.89,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.052,
+     "straight_hazard": 0.091,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 19,
+      "rock_share": 0.051,
+      "smooth_share": 0.017
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4669_119_198_behind",
+     "photo_id": "NLB_811980095EDR_F1190198NCAM00292M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04669/opgs/edr/ncam/NLB_811980095EDR_F1190198NCAM00292M_.JPG",
+     "photo_azimuth_deg": 293.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.395,
+      "bedrock": 0.467,
+      "sand": 0.138,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.215,
+     "model_confidence": 0.72,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.079,
+     "straight_hazard": 0.233,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 5% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.068,
+      "smooth_share": 0.023
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4669_119_198_left",
+     "photo_id": "NLB_811979360EDR_F1190198NCAM00291M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04669/opgs/edr/ncam/NLB_811979360EDR_F1190198NCAM00291M_.JPG",
+     "photo_azimuth_deg": 20.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.038,
+      "bedrock": 0.958,
+      "sand": 0.002,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.93,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.016,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 4,
+      "rock_share": 0.011,
+      "smooth_share": 0.013
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4671_119_486",
+   "sol": 4671,
+   "lat": -4.80827103,
+   "lon": 137.3812695,
+   "elevation_m": -3608.263,
+   "rover_tilt_deg": 8.35,
+   "drive_m": 33.35,
+   "heading_to_next_deg": 146.1,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4671_119_486_ahead",
+     "photo_id": "NLB_812160278EDR_F1190486NCAM00294M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04671/opgs/edr/ncam/NLB_812160278EDR_F1190486NCAM00294M_.JPG",
+     "photo_azimuth_deg": 141.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.001,
+      "bedrock": 0.882,
+      "sand": 0.055,
+      "big rock": 0.049
+     },
+     "rover_in_view": 0.012,
+     "model_confidence": 0.95,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 9,
+      "rock_share": 0.021,
+      "smooth_share": 0.055
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4671_119_486_behind",
+     "photo_id": "NLB_812159187EDR_F1190486NCAM00293M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04671/opgs/edr/ncam/NLB_812159187EDR_F1190486NCAM00293M_.JPG",
+     "photo_azimuth_deg": 316.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.032,
+      "bedrock": 0.616,
+      "sand": 0.352,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.168,
+     "model_confidence": 0.77,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.182,
+     "straight_hazard": 0.199,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there.",
+       "The model marks sand in view, but only 1% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 10,
+      "rock_share": 0.039,
+      "smooth_share": 0.012
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4671_119_486_left",
+     "photo_id": "NLB_812159267EDR_F1190486NCAM00293M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04671/opgs/edr/ncam/NLB_812159267EDR_F1190486NCAM00293M_.JPG",
+     "photo_azimuth_deg": 48.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.059,
+      "bedrock": 0.781,
+      "sand": 0.106,
+      "big rock": 0.052
+     },
+     "rover_in_view": 0.001,
+     "model_confidence": 0.85,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.21,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 13,
+      "rock_share": 0.036,
+      "smooth_share": 0.076
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4680_119_1344",
+   "sol": 4680,
+   "lat": -4.80827147,
+   "lon": 137.3812465,
+   "elevation_m": -3608.02,
+   "rover_tilt_deg": 8.87,
+   "drive_m": 44.66,
+   "heading_to_next_deg": 318.8,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4680_119_1344_ahead",
+     "photo_id": "NLB_812960478EDR_F1191344NCAM00252M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04680/opgs/edr/ncam/NLB_812960478EDR_F1191344NCAM00252M_.JPG",
+     "photo_azimuth_deg": 326.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.052,
+      "bedrock": 0.899,
+      "sand": 0.049,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.111,
+     "model_confidence": 0.93,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.013,
+     "straight_hazard": 0.03,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 2,
+      "rock_share": 0.008,
+      "smooth_share": 0.069
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4680_119_1344_right",
+     "photo_id": "NLB_812960571EDR_F1191344NCAM00252M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04680/opgs/edr/ncam/NLB_812960571EDR_F1191344NCAM00252M_.JPG",
+     "photo_azimuth_deg": 54.1,
+     "status": "blocked",
+     "ground": {
+      "soil": 0.332,
+      "bedrock": 0.356,
+      "sand": 0.282,
+      "big rock": 0.024
+     },
+     "rover_in_view": 0.032,
+     "model_confidence": 0.82,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.296,
+     "straight_hazard": 0.335,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 9% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 11,
+      "rock_share": 0.053,
+      "smooth_share": 0.101
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4680_119_1344_behind",
+     "photo_id": "NLB_812961537EDR_F1191344NCAM00253M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04680/opgs/edr/ncam/NLB_812961537EDR_F1191344NCAM00253M_.JPG",
+     "photo_azimuth_deg": 141.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.017,
+      "bedrock": 0.881,
+      "sand": 0.095,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.019,
+     "model_confidence": 0.89,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.115,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 10,
+      "rock_share": 0.037,
+      "smooth_share": 0.071
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4684_119_1554",
+   "sol": 4684,
+   "lat": -4.80801097,
+   "lon": 137.3810178,
+   "elevation_m": -3607.941,
+   "rover_tilt_deg": 9.26,
+   "drive_m": 24.02,
+   "heading_to_next_deg": 5.8,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4684_119_1554_ahead",
+     "photo_id": "NLB_813313427EDR_F1191554NCAM00255M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04684/opgs/edr/ncam/NLB_813313427EDR_F1191554NCAM00255M_.JPG",
+     "photo_azimuth_deg": 11.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.563,
+      "bedrock": 0.354,
+      "sand": 0.079,
+      "big rock": 0.002
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.73,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.024,
+     "straight_hazard": 0.082,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 4% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 29,
+      "rock_share": 0.084,
+      "smooth_share": 0.054
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4687_119_1722",
+   "sol": 4687,
+   "lat": -4.80783916,
+   "lon": 137.3810353,
+   "elevation_m": -3610.432,
+   "rover_tilt_deg": 6.71,
+   "drive_m": 17.1,
+   "heading_to_next_deg": 175.0,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4687_119_1722_ahead",
+     "photo_id": "NLB_813579492EDR_F1191722NCAM00259M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04687/opgs/edr/ncam/NLB_813579492EDR_F1191722NCAM00259M_.JPG",
+     "photo_azimuth_deg": 175.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.636,
+      "bedrock": 0.21,
+      "sand": 0.148,
+      "big rock": 0.006
+     },
+     "rover_in_view": 0.227,
+     "model_confidence": 0.67,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.06,
+     "straight_hazard": 0.42,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 15,
+      "rock_share": 0.067,
+      "smooth_share": 0.059
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4687_119_1722_right",
+     "photo_id": "NLB_813579644EDR_F1191722NCAM00259M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04687/opgs/edr/ncam/NLB_813579644EDR_F1191722NCAM00259M_.JPG",
+     "photo_azimuth_deg": 262.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.494,
+      "bedrock": 0.506,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.244,
+     "model_confidence": 0.82,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.052,
+     "straight_hazard": 0.225,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 5,
+      "rock_share": 0.06,
+      "smooth_share": 0.009
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4687_119_1722_behind",
+     "photo_id": "NLB_813578793EDR_F1191722NCAM00258M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04687/opgs/edr/ncam/NLB_813578793EDR_F1191722NCAM00258M_.JPG",
+     "photo_azimuth_deg": 353.8,
+     "status": "clear",
+     "ground": {
+      "soil": 0.797,
+      "bedrock": 0.195,
+      "sand": 0.0,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.75,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.012,
+     "straight_hazard": 0.012,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 26,
+      "rock_share": 0.054,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4687_119_1722_left",
+     "photo_id": "NLB_813579406EDR_F1191722NCAM00259M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04687/opgs/edr/ncam/NLB_813579406EDR_F1191722NCAM00259M_.JPG",
+     "photo_azimuth_deg": 86.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.169,
+      "bedrock": 0.793,
+      "sand": 0.0,
+      "big rock": 0.035
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.85,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.035,
+     "straight_hazard": 0.085,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 25,
+      "rock_share": 0.059,
+      "smooth_share": 0.016
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4709_120_0",
+   "sol": 4709,
+   "lat": -4.80799931,
+   "lon": 137.3810495,
+   "elevation_m": -3608.689,
+   "rover_tilt_deg": 9.65,
+   "drive_m": 10.4,
+   "heading_to_next_deg": 259.7,
+   "status": "clear",
+   "status_direction": "right",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4709_120_0_right",
+     "photo_id": "NLB_815536970EDR_F1200000NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04709/opgs/edr/ncam/NLB_815536970EDR_F1200000NCAM00261M_.JPG",
+     "photo_azimuth_deg": 340.5,
+     "status": "clear",
+     "ground": {
+      "soil": 0.03,
+      "bedrock": 0.969,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.02,
+     "model_confidence": 0.94,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.022,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.014,
+      "smooth_share": 0.018
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4709_120_0_behind",
+     "photo_id": "NLB_815537059EDR_F1200000NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04709/opgs/edr/ncam/NLB_815537059EDR_F1200000NCAM00261M_.JPG",
+     "photo_azimuth_deg": 72.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.046,
+      "bedrock": 0.934,
+      "sand": 0.006,
+      "big rock": 0.009
+     },
+     "rover_in_view": 0.023,
+     "model_confidence": 0.95,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.001,
+     "straight_hazard": 0.001,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.018,
+      "smooth_share": 0.049
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4709_120_0_left",
+     "photo_id": "NLB_815538633EDR_F1200000NCAM00262M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04709/opgs/edr/ncam/NLB_815538633EDR_F1200000NCAM00262M_.JPG",
+     "photo_azimuth_deg": 188.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.33,
+      "bedrock": 0.67,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.341,
+     "model_confidence": 0.87,
+     "chosen_path": 2,
+     "straight_path": 2,
+     "chosen_hazard": 0.002,
+     "straight_hazard": 0.002,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 5,
+      "rock_share": 0.05,
+      "smooth_share": 0.141
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4711_120_82",
+   "sol": 4711,
+   "lat": -4.80800755,
+   "lon": 137.3810041,
+   "elevation_m": -3607.722,
+   "rover_tilt_deg": 11.0,
+   "drive_m": 3.71,
+   "heading_to_next_deg": 2.2,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4711_120_82_ahead",
+     "photo_id": "NLB_815715484EDR_F1200082NCAM00265M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04711/opgs/edr/ncam/NLB_815715484EDR_F1200082NCAM00265M_.JPG",
+     "photo_azimuth_deg": 9.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.02,
+      "bedrock": 0.966,
+      "sand": 0.011,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.93,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.055,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 5,
+      "rock_share": 0.013,
+      "smooth_share": 0.041
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4711_120_82_right",
+     "photo_id": "NLB_815715579EDR_F1200082NCAM00265M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04711/opgs/edr/ncam/NLB_815715579EDR_F1200082NCAM00265M_.JPG",
+     "photo_azimuth_deg": 102.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.017,
+      "bedrock": 0.856,
+      "sand": 0.051,
+      "big rock": 0.071
+     },
+     "rover_in_view": 0.026,
+     "model_confidence": 0.9,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.056,
+     "straight_hazard": 0.184,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 16,
+      "rock_share": 0.051,
+      "smooth_share": 0.077
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4711_120_82_left",
+     "photo_id": "NLB_815714631EDR_F1200082NCAM00264M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04711/opgs/edr/ncam/NLB_815714631EDR_F1200082NCAM00264M_.JPG",
+     "photo_azimuth_deg": 275.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.108,
+      "bedrock": 0.891,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.337,
+     "model_confidence": 0.71,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.033,
+     "straight_hazard": 0.048,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 12,
+      "rock_share": 0.058,
+      "smooth_share": 0.026
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4741_120_232",
+   "sol": 4741,
+   "lat": -4.80776275,
+   "lon": 137.3810137,
+   "elevation_m": -3611.533,
+   "rover_tilt_deg": 12.23,
+   "drive_m": 17.78,
+   "heading_to_next_deg": 144.1,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4741_120_232_ahead",
+     "photo_id": "NLB_818377266EDR_F1200232NCAM00269M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04741/opgs/edr/ncam/NLB_818377266EDR_F1200232NCAM00269M_.JPG",
+     "photo_azimuth_deg": 130.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.769,
+      "bedrock": 0.068,
+      "sand": 0.0,
+      "big rock": 0.155
+     },
+     "rover_in_view": 0.013,
+     "model_confidence": 0.91,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.048,
+     "straight_hazard": 0.129,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 27,
+      "rock_share": 0.083,
+      "smooth_share": 0.013
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4741_120_232_right",
+     "photo_id": "NLB_818377443EDR_F1200232NCAM00269M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04741/opgs/edr/ncam/NLB_818377443EDR_F1200232NCAM00269M_.JPG",
+     "photo_azimuth_deg": 245.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.772,
+      "bedrock": 0.0,
+      "sand": 0.228,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.22,
+     "model_confidence": 0.93,
+     "chosen_path": 6,
+     "straight_path": 4,
+     "chosen_hazard": 0.031,
+     "straight_hazard": 0.079,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there.",
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 9,
+      "rock_share": 0.056,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4741_120_232_behind",
+     "photo_id": "NLB_818376147EDR_F1200232NCAM00268M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04741/opgs/edr/ncam/NLB_818376147EDR_F1200232NCAM00268M_.JPG",
+     "photo_azimuth_deg": 334.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.476,
+      "bedrock": 0.206,
+      "sand": 0.288,
+      "big rock": 0.026
+     },
+     "rover_in_view": 0.086,
+     "model_confidence": 0.66,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.106,
+     "straight_hazard": 0.446,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there.",
+       "The model marks sand in view, but only 6% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 20,
+      "rock_share": 0.052,
+      "smooth_share": 0.021
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4741_120_232_left",
+     "photo_id": "NLB_818376210EDR_F1200232NCAM00268M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04741/opgs/edr/ncam/NLB_818376210EDR_F1200232NCAM00268M_.JPG",
+     "photo_azimuth_deg": 39.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.751,
+      "bedrock": 0.064,
+      "sand": 0.0,
+      "big rock": 0.182
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.8,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.031,
+     "straight_hazard": 0.174,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 26,
+      "rock_share": 0.056,
+      "smooth_share": 0.002
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4748_120_346",
+   "sol": 4748,
+   "lat": -4.80790799,
+   "lon": 137.3811194,
+   "elevation_m": -3610.29,
+   "rover_tilt_deg": 14.12,
+   "drive_m": 11.16,
+   "heading_to_next_deg": 225.5,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4748_120_346_ahead",
+     "photo_id": "NLB_818995760EDR_F1200346NCAM00272M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04748/opgs/edr/ncam/NLB_818995760EDR_F1200346NCAM00272M_.JPG",
+     "photo_azimuth_deg": 259.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.452,
+      "bedrock": 0.548,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.201,
+     "model_confidence": 0.74,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.04,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.041,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4748_120_346_right",
+     "photo_id": "NLB_818995814EDR_F1200346NCAM00272M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04748/opgs/edr/ncam/NLB_818995814EDR_F1200346NCAM00272M_.JPG",
+     "photo_azimuth_deg": 319.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.052,
+      "bedrock": 0.947,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.275,
+     "model_confidence": 0.91,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.029,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4748_120_346_behind",
+     "photo_id": "NLB_818994882EDR_F1200346NCAM00271M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04748/opgs/edr/ncam/NLB_818994882EDR_F1200346NCAM00271M_.JPG",
+     "photo_azimuth_deg": 57.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.004,
+      "bedrock": 0.994,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.97,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.042,
+     "straight_hazard": 0.051,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 6,
+      "rock_share": 0.024,
+      "smooth_share": 0.003
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4748_120_346_left",
+     "photo_id": "NLB_818994949EDR_F1200346NCAM00271M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04748/opgs/edr/ncam/NLB_818994949EDR_F1200346NCAM00271M_.JPG",
+     "photo_azimuth_deg": 117.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.827,
+      "bedrock": 0.172,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.001,
+     "model_confidence": 0.92,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.005,
+     "straight_hazard": 0.053,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 26,
+      "rock_share": 0.062,
+      "smooth_share": 0.035
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4752_120_538",
+   "sol": 4752,
+   "lat": -4.80803169,
+   "lon": 137.3809929,
+   "elevation_m": -3607.648,
+   "rover_tilt_deg": 9.53,
+   "drive_m": 18.49,
+   "heading_to_next_deg": 358.9,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4752_120_538_ahead",
+     "photo_id": "NLB_819358516EDR_F1200538NCAM00274M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04752/opgs/edr/ncam/NLB_819358516EDR_F1200538NCAM00274M_.JPG",
+     "photo_azimuth_deg": 356.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.037,
+      "bedrock": 0.951,
+      "sand": 0.007,
+      "big rock": 0.004
+     },
+     "rover_in_view": 0.015,
+     "model_confidence": 0.81,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.052,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 9,
+      "rock_share": 0.022,
+      "smooth_share": 0.016
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4752_120_538_right",
+     "photo_id": "NLB_819359186EDR_F1200538NCAM00275M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04752/opgs/edr/ncam/NLB_819359186EDR_F1200538NCAM00275M_.JPG",
+     "photo_azimuth_deg": 90.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.516,
+      "bedrock": 0.478,
+      "sand": 0.0,
+      "big rock": 0.004
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.81,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.023,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 29,
+      "rock_share": 0.084,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4752_120_538_behind",
+     "photo_id": "NLB_819359333EDR_F1200538NCAM00275M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04752/opgs/edr/ncam/NLB_819359333EDR_F1200538NCAM00275M_.JPG",
+     "photo_azimuth_deg": 181.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.008,
+      "bedrock": 0.805,
+      "sand": 0.069,
+      "big rock": 0.116
+     },
+     "rover_in_view": 0.345,
+     "model_confidence": 0.9,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.16,
+     "straight_hazard": 0.179,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 11% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 10,
+      "rock_share": 0.057,
+      "smooth_share": 0.135
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4752_120_538_left",
+     "photo_id": "NLB_819359427EDR_F1200538NCAM00275M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04752/opgs/edr/ncam/NLB_819359427EDR_F1200538NCAM00275M_.JPG",
+     "photo_azimuth_deg": 268.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.522,
+      "bedrock": 0.478,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.075,
+     "model_confidence": 0.69,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.041,
+      "smooth_share": 0.037
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4789_120_574",
+   "sol": 4789,
+   "lat": -4.80800539,
+   "lon": 137.3809924,
+   "elevation_m": -3608.018,
+   "rover_tilt_deg": 11.46,
+   "drive_m": 1.6,
+   "heading_to_next_deg": 68.4,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4789_120_574_ahead",
+     "photo_id": "NLB_822633988EDR_F1200574NCAM00278M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04789/opgs/edr/ncam/NLB_822633988EDR_F1200574NCAM00278M_.JPG",
+     "photo_azimuth_deg": 80.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.196,
+      "bedrock": 0.78,
+      "sand": 0.003,
+      "big rock": 0.02
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.89,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.005,
+     "straight_hazard": 0.052,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.019,
+      "smooth_share": 0.112
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4789_120_574_right",
+     "photo_id": "NLB_822634035EDR_F1200574NCAM00278M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04789/opgs/edr/ncam/NLB_822634035EDR_F1200574NCAM00278M_.JPG",
+     "photo_azimuth_deg": 139.8,
+     "status": "clear",
+     "ground": {
+      "soil": 0.002,
+      "bedrock": 0.929,
+      "sand": 0.037,
+      "big rock": 0.024
+     },
+     "rover_in_view": 0.011,
+     "model_confidence": 0.95,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.038,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.023,
+      "smooth_share": 0.084
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4789_120_574_behind",
+     "photo_id": "NLB_822633279EDR_F1200574NCAM00277M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04789/opgs/edr/ncam/NLB_822633279EDR_F1200574NCAM00277M_.JPG",
+     "photo_azimuth_deg": 255.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.069,
+      "bedrock": 0.931,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.172,
+     "model_confidence": 0.9,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.15,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 4,
+      "rock_share": 0.035,
+      "smooth_share": 0.026
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4789_120_574_left",
+     "photo_id": "NLB_822633359EDR_F1200574NCAM00277M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04789/opgs/edr/ncam/NLB_822633359EDR_F1200574NCAM00277M_.JPG",
+     "photo_azimuth_deg": 344.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.051,
+      "bedrock": 0.946,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.94,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.015,
+     "straight_hazard": 0.022,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.025,
+      "smooth_share": 0.05
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4805_120_808",
+   "sol": 4805,
+   "lat": -4.8078367,
+   "lon": 137.38142,
+   "elevation_m": -3610.912,
+   "rover_tilt_deg": 4.38,
+   "drive_m": 27.93,
+   "heading_to_next_deg": 15.8,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4805_120_808_ahead",
+     "photo_id": "NLB_824057309EDR_F1200808NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04805/opgs/edr/ncam/NLB_824057309EDR_F1200808NCAM00280M_.JPG",
+     "photo_azimuth_deg": 9.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.986,
+      "sand": 0.011,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.005,
+     "model_confidence": 0.96,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.044,
+     "straight_hazard": 0.069,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.058,
+      "smooth_share": 0.011
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4805_120_808_right",
+     "photo_id": "NLB_824057388EDR_F1200808NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04805/opgs/edr/ncam/NLB_824057388EDR_F1200808NCAM00280M_.JPG",
+     "photo_azimuth_deg": 99.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.022,
+      "bedrock": 0.902,
+      "sand": 0.072,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.93,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.032,
+     "straight_hazard": 0.063,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 10,
+      "rock_share": 0.027,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4805_120_808_left",
+     "photo_id": "NLB_824057230EDR_F1200808NCAM00280M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04805/opgs/edr/ncam/NLB_824057230EDR_F1200808NCAM00280M_.JPG",
+     "photo_azimuth_deg": 281.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.022,
+      "bedrock": 0.894,
+      "sand": 0.08,
+      "big rock": 0.003
+     },
+     "rover_in_view": 0.232,
+     "model_confidence": 0.93,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.011,
+     "straight_hazard": 0.011,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 5,
+      "rock_share": 0.019,
+      "smooth_share": 0.038
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4810_120_1042",
+   "sol": 4810,
+   "lat": -4.8075379,
+   "lon": 137.3815047,
+   "elevation_m": -3613.194,
+   "rover_tilt_deg": 7.19,
+   "drive_m": 26.63,
+   "heading_to_next_deg": 40.9,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4810_120_1042_ahead",
+     "photo_id": "NLB_824493457EDR_F1201042NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04810/opgs/edr/ncam/NLB_824493457EDR_F1201042NCAM00285M_.JPG",
+     "photo_azimuth_deg": 46.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.1,
+      "bedrock": 0.694,
+      "sand": 0.189,
+      "big rock": 0.014
+     },
+     "rover_in_view": 0.02,
+     "model_confidence": 0.84,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.22,
+     "straight_hazard": 0.31,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.026,
+      "smooth_share": 0.168
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4810_120_1042_right",
+     "photo_id": "NLB_824493536EDR_F1201042NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04810/opgs/edr/ncam/NLB_824493536EDR_F1201042NCAM00285M_.JPG",
+     "photo_azimuth_deg": 134.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.523,
+      "bedrock": 0.472,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.011,
+     "model_confidence": 0.86,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 20,
+      "rock_share": 0.07,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4810_120_1042_left",
+     "photo_id": "NLB_824495020EDR_F1201042NCAM00286M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04810/opgs/edr/ncam/NLB_824495020EDR_F1201042NCAM00286M_.JPG",
+     "photo_azimuth_deg": 317.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.447,
+      "bedrock": 0.482,
+      "sand": 0.006,
+      "big rock": 0.065
+     },
+     "rover_in_view": 0.229,
+     "model_confidence": 0.81,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.067,
+     "straight_hazard": 0.198,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 7% of the chosen path; the model sees no big rock there.",
+       "Edge check finds smooth ground on 32% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 24,
+      "rock_share": 0.086,
+      "smooth_share": 0.146
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4813_120_1264",
+   "sol": 4813,
+   "lat": -4.80734998,
+   "lon": 137.381668,
+   "elevation_m": -3615.743,
+   "rover_tilt_deg": 11.49,
+   "drive_m": 22.91,
+   "heading_to_next_deg": 123.0,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4813_120_1264_ahead",
+     "photo_id": "NLB_824770475EDR_F1201264NCAM00288M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04813/opgs/edr/ncam/NLB_824770475EDR_F1201264NCAM00288M_.JPG",
+     "photo_azimuth_deg": 110.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.484,
+      "bedrock": 0.506,
+      "sand": 0.0,
+      "big rock": 0.01
+     },
+     "rover_in_view": 0.011,
+     "model_confidence": 0.7,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 21,
+      "rock_share": 0.048,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4813_120_1264_behind",
+     "photo_id": "NLB_824771804EDR_F1201264NCAM00289M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04813/opgs/edr/ncam/NLB_824771804EDR_F1201264NCAM00289M_.JPG",
+     "photo_azimuth_deg": 297.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.522,
+      "bedrock": 0.46,
+      "sand": 0.0,
+      "big rock": 0.018
+     },
+     "rover_in_view": 0.332,
+     "model_confidence": 0.82,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.009,
+     "straight_hazard": 0.113,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.063,
+      "smooth_share": 0.035
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4813_120_1264_left",
+     "photo_id": "NLB_824770389EDR_F1201264ACS_00000M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04813/opgs/edr/ncam/NLB_824770389EDR_F1201264ACS_00000M_.JPG",
+     "photo_azimuth_deg": 22.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.92,
+      "sand": 0.031,
+      "big rock": 0.047
+     },
+     "rover_in_view": 0.305,
+     "model_confidence": 0.93,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.035,
+     "straight_hazard": 0.139,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 17,
+      "rock_share": 0.078,
+      "smooth_share": 0.135
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4816_120_1546",
+   "sol": 4816,
+   "lat": -4.80752572,
+   "lon": 137.38194,
+   "elevation_m": -3615.227,
+   "rover_tilt_deg": 6.68,
+   "drive_m": 25.67,
+   "heading_to_next_deg": 121.4,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4816_120_1546_ahead",
+     "photo_id": "NLB_825029235EDR_F1201546NCAM00292M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04816/opgs/edr/ncam/NLB_825029235EDR_F1201546NCAM00292M_.JPG",
+     "photo_azimuth_deg": 132.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.089,
+      "bedrock": 0.905,
+      "sand": 0.005,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.023,
+     "model_confidence": 0.85,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.002,
+     "straight_hazard": 0.048,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 10% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.047,
+      "smooth_share": 0.029
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4816_120_1546_behind",
+     "photo_id": "NLB_825028322EDR_F1201546NCAM00291M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04816/opgs/edr/ncam/NLB_825028322EDR_F1201546NCAM00291M_.JPG",
+     "photo_azimuth_deg": 311.4,
+     "status": "blocked",
+     "ground": {
+      "soil": 0.773,
+      "bedrock": 0.024,
+      "sand": 0.201,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.344,
+     "model_confidence": 0.83,
+     "chosen_path": 5,
+     "straight_path": 5,
+     "chosen_hazard": 0.415,
+     "straight_hazard": 0.415,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 10% of the chosen path; the model sees no big rock there.",
+       "The model marks sand in view, but only 5% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 17,
+      "rock_share": 0.068,
+      "smooth_share": 0.009
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4816_120_1546_left",
+     "photo_id": "NLB_825029149EDR_F1201546NCAM00292M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04816/opgs/edr/ncam/NLB_825029149EDR_F1201546NCAM00292M_.JPG",
+     "photo_azimuth_deg": 44.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.479,
+      "bedrock": 0.467,
+      "sand": 0.0,
+      "big rock": 0.051
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.89,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.061,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 21,
+      "rock_share": 0.068,
+      "smooth_share": 0.009
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4818_120_2030",
+   "sol": 4818,
+   "lat": -4.80790359,
+   "lon": 137.3825624,
+   "elevation_m": -3615.835,
+   "rover_tilt_deg": 4.85,
+   "drive_m": 54.05,
+   "heading_to_next_deg": 42.3,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4818_120_2030_ahead",
+     "photo_id": "NLB_825216829EDR_F1202030NCAM00295M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04818/opgs/edr/ncam/NLB_825216829EDR_F1202030NCAM00295M_.JPG",
+     "photo_azimuth_deg": 28.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.473,
+      "bedrock": 0.509,
+      "sand": 0.008,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.009,
+     "model_confidence": 0.89,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.024,
+     "straight_hazard": 0.045,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 14% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 25,
+      "rock_share": 0.067,
+      "smooth_share": 0.046
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4818_120_2030_right",
+     "photo_id": "NLB_825217994EDR_F1202030NCAM00296M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04818/opgs/edr/ncam/NLB_825217994EDR_F1202030NCAM00296M_.JPG",
+     "photo_azimuth_deg": 120.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.703,
+      "bedrock": 0.193,
+      "sand": 0.0,
+      "big rock": 0.1
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.82,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.075,
+     "straight_hazard": 0.075,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 8% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.065,
+      "smooth_share": 0.021
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4818_120_2030_left",
+     "photo_id": "NLB_825216750EDR_F1202030NCAM00295M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04818/opgs/edr/ncam/NLB_825216750EDR_F1202030NCAM00295M_.JPG",
+     "photo_azimuth_deg": 300.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.417,
+      "bedrock": 0.437,
+      "sand": 0.146,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.271,
+     "model_confidence": 0.81,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.017,
+     "straight_hazard": 0.017,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "The model marks sand in view, but only 0% of it is smooth in the edge check. It may be rippled sand or a model error."
+      ],
+      "rocks_found": 19,
+      "rock_share": 0.095,
+      "smooth_share": 0.008
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4820_120_2102",
+   "sol": 4820,
+   "lat": -4.80778482,
+   "lon": 137.382671,
+   "elevation_m": -3617.009,
+   "rover_tilt_deg": 3.69,
+   "drive_m": 9.62,
+   "heading_to_next_deg": 203.6,
+   "status": "clear",
+   "status_direction": "behind",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4820_120_2102_right",
+     "photo_id": "NLB_825391437EDR_F1202102NCAM00299M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04820/opgs/edr/ncam/NLB_825391437EDR_F1202102NCAM00299M_.JPG",
+     "photo_azimuth_deg": 280.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.005,
+      "bedrock": 0.962,
+      "sand": 0.029,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.298,
+     "model_confidence": 0.9,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.148,
+     "straight_hazard": 0.213,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 14% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.075,
+      "smooth_share": 0.049
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4820_120_2102_behind",
+     "photo_id": "NLB_825391516EDR_F1202102NCAM00299M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04820/opgs/edr/ncam/NLB_825391516EDR_F1202102NCAM00299M_.JPG",
+     "photo_azimuth_deg": 8.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.994,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.008,
+     "model_confidence": 0.98,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.001,
+     "straight_hazard": 0.014,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 10,
+      "rock_share": 0.023,
+      "smooth_share": 0.06
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4820_120_2102_left",
+     "photo_id": "NLB_825390787EDR_F1202102NCAM00298M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04820/opgs/edr/ncam/NLB_825390787EDR_F1202102NCAM00298M_.JPG",
+     "photo_azimuth_deg": 98.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.124,
+      "bedrock": 0.714,
+      "sand": 0.137,
+      "big rock": 0.016
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.77,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.137,
+     "straight_hazard": 0.249,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 22,
+      "rock_share": 0.08,
+      "smooth_share": 0.095
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4823_120_2192",
+   "sol": 4823,
+   "lat": -4.80788259,
+   "lon": 137.3826281,
+   "elevation_m": -3616.256,
+   "rover_tilt_deg": 7.62,
+   "drive_m": 7.34,
+   "heading_to_next_deg": 138.1,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4823_120_2192_ahead",
+     "photo_id": "NLB_825651829EDR_F1202192NCAM00252M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04823/opgs/edr/ncam/NLB_825651829EDR_F1202192NCAM00252M_.JPG",
+     "photo_azimuth_deg": 124.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.161,
+      "bedrock": 0.672,
+      "sand": 0.123,
+      "big rock": 0.036
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.74,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.102,
+     "straight_hazard": 0.221,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 8% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 17,
+      "rock_share": 0.083,
+      "smooth_share": 0.05
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4823_120_2192_behind",
+     "photo_id": "NLB_825651505EDR_F1202192NCAM00251M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04823/opgs/edr/ncam/NLB_825651505EDR_F1202192NCAM00251M_.JPG",
+     "photo_azimuth_deg": 332.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.531,
+      "bedrock": 0.465,
+      "sand": 0.0,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.094,
+     "model_confidence": 0.81,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.079,
+     "straight_hazard": 0.134,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 8% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.057,
+      "smooth_share": 0.047
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4823_120_2192_left",
+     "photo_id": "NLB_825651566EDR_F1202192NCAM00251M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04823/opgs/edr/ncam/NLB_825651566EDR_F1202192NCAM00251M_.JPG",
+     "photo_azimuth_deg": 35.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.506,
+      "bedrock": 0.414,
+      "sand": 0.0,
+      "big rock": 0.077
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.75,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.022,
+     "straight_hazard": 0.111,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 22,
+      "rock_share": 0.085,
+      "smooth_share": 0.024
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4827_120_2366",
+   "sol": 4827,
+   "lat": -4.80813306,
+   "lon": 137.3828539,
+   "elevation_m": -3615.48,
+   "rover_tilt_deg": 9.14,
+   "drive_m": 21.03,
+   "heading_to_next_deg": 196.3,
+   "status": "caution",
+   "status_direction": "behind",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4827_120_2366_right",
+     "photo_id": "NLB_826010399EDR_F1202366NCAM00255M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04827/opgs/edr/ncam/NLB_826010399EDR_F1202366NCAM00255M_.JPG",
+     "photo_azimuth_deg": 289.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.906,
+      "sand": 0.094,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.252,
+     "model_confidence": 0.89,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.009,
+     "straight_hazard": 0.038,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 31% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 11,
+      "rock_share": 0.062,
+      "smooth_share": 0.16
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4827_120_2366_behind",
+     "photo_id": "NLB_826009365EDR_F1202366NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04827/opgs/edr/ncam/NLB_826009365EDR_F1202366NCAM00254M_.JPG",
+     "photo_azimuth_deg": 19.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.56,
+      "bedrock": 0.438,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.79,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.004,
+     "straight_hazard": 0.093,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 39,
+      "rock_share": 0.087,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4827_120_2366_left",
+     "photo_id": "NLB_826009453EDR_F1202366NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04827/opgs/edr/ncam/NLB_826009453EDR_F1202366NCAM00254M_.JPG",
+     "photo_azimuth_deg": 113.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.405,
+      "bedrock": 0.592,
+      "sand": 0.0,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.005,
+     "model_confidence": 0.77,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.023,
+     "straight_hazard": 0.039,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 25,
+      "rock_share": 0.059,
+      "smooth_share": 0.008
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4830_120_2726",
+   "sol": 4830,
+   "lat": -4.80882201,
+   "lon": 137.3826516,
+   "elevation_m": -3609.236,
+   "rover_tilt_deg": 9.99,
+   "drive_m": 47.16,
+   "heading_to_next_deg": 176.4,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4830_120_2726_ahead",
+     "photo_id": "NLB_826276274EDR_F1202726NCAM00258M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04830/opgs/edr/ncam/NLB_826276274EDR_F1202726NCAM00258M_.JPG",
+     "photo_azimuth_deg": 167.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.999,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.115,
+     "model_confidence": 0.91,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.032,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 5,
+      "rock_share": 0.019,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4830_120_2726_right",
+     "photo_id": "NLB_826276424EDR_F1202726NCAM00258M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04830/opgs/edr/ncam/NLB_826276424EDR_F1202726NCAM00258M_.JPG",
+     "photo_azimuth_deg": 253.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.478,
+      "bedrock": 0.511,
+      "sand": 0.002,
+      "big rock": 0.008
+     },
+     "rover_in_view": 0.187,
+     "model_confidence": 0.68,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.038,
+     "straight_hazard": 0.038,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.043,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4830_120_2726_behind",
+     "photo_id": "NLB_826275233EDR_F1202726NCAM00257M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04830/opgs/edr/ncam/NLB_826275233EDR_F1202726NCAM00257M_.JPG",
+     "photo_azimuth_deg": 343.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.09,
+      "bedrock": 0.884,
+      "sand": 0.019,
+      "big rock": 0.004
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.8,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.015,
+     "straight_hazard": 0.015,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.039,
+      "smooth_share": 0.005
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4830_120_2726_left",
+     "photo_id": "NLB_826275308EDR_F1202726NCAM00257M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04830/opgs/edr/ncam/NLB_826275308EDR_F1202726NCAM00257M_.JPG",
+     "photo_azimuth_deg": 78.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.999,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.99,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.05,
+     "straight_hazard": 0.11,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 12,
+      "rock_share": 0.044,
+      "smooth_share": 0.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4834_121_0",
+   "sol": 4834,
+   "lat": -4.80954314,
+   "lon": 137.3826974,
+   "elevation_m": -3604.708,
+   "rover_tilt_deg": 9.17,
+   "drive_m": 45.57,
+   "heading_to_next_deg": 242.8,
+   "status": "caution",
+   "status_direction": "right",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4834_121_0_right",
+     "photo_id": "NLB_826632323EDR_F1210000NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04834/opgs/edr/ncam/NLB_826632323EDR_F1210000NCAM00261M_.JPG",
+     "photo_azimuth_deg": 322.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.198,
+      "bedrock": 0.796,
+      "sand": 0.004,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.16,
+     "model_confidence": 0.76,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.062,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 22,
+      "rock_share": 0.056,
+      "smooth_share": 0.009
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4834_121_0_behind",
+     "photo_id": "NLB_826632417EDR_F1210000NCAM00261M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04834/opgs/edr/ncam/NLB_826632417EDR_F1210000NCAM00261M_.JPG",
+     "photo_azimuth_deg": 51.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.971,
+      "sand": 0.0,
+      "big rock": 0.026
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.92,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.074,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 22% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 18,
+      "rock_share": 0.069,
+      "smooth_share": 0.061
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4834_121_0_left",
+     "photo_id": "NLB_826633428EDR_F1210000NCAM00262M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04834/opgs/edr/ncam/NLB_826633428EDR_F1210000NCAM00262M_.JPG",
+     "photo_azimuth_deg": 138.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.973,
+      "sand": 0.004,
+      "big rock": 0.009
+     },
+     "rover_in_view": 0.018,
+     "model_confidence": 0.93,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.035,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 5,
+      "rock_share": 0.015,
+      "smooth_share": 0.002
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4837_121_156",
+   "sol": 4837,
+   "lat": -4.80971635,
+   "lon": 137.3823585,
+   "elevation_m": -3603.622,
+   "rover_tilt_deg": 6.21,
+   "drive_m": 23.0,
+   "heading_to_next_deg": 248.3,
+   "status": "caution",
+   "status_direction": "right",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4837_121_156_right",
+     "photo_id": "NLB_826894981EDR_F1210156NCAM00264M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04837/opgs/edr/ncam/NLB_826894981EDR_F1210156NCAM00264M_.JPG",
+     "photo_azimuth_deg": 328.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.015,
+      "bedrock": 0.985,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.103,
+     "model_confidence": 0.95,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.078,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 15,
+      "rock_share": 0.044,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4837_121_156_behind",
+     "photo_id": "NLB_826895942EDR_F1210156NCAM00265M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04837/opgs/edr/ncam/NLB_826895942EDR_F1210156NCAM00265M_.JPG",
+     "photo_azimuth_deg": 59.5,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.98,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.026,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.041,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4837_121_156_left",
+     "photo_id": "NLB_826896021EDR_F1210156NCAM00265M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04837/opgs/edr/ncam/NLB_826896021EDR_F1210156NCAM00265M_.JPG",
+     "photo_azimuth_deg": 147.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.988,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.017,
+     "model_confidence": 0.98,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.021,
+     "straight_hazard": 0.074,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 16,
+      "rock_share": 0.063,
+      "smooth_share": 0.006
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4841_121_762",
+   "sol": 4841,
+   "lat": -4.81042121,
+   "lon": 137.3817563,
+   "elevation_m": -3595.812,
+   "rover_tilt_deg": 12.89,
+   "drive_m": 39.44,
+   "heading_to_next_deg": 214.7,
+   "status": "caution",
+   "status_direction": "left",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4841_121_762_right",
+     "photo_id": "NLB_827252783EDR_F1210762NCAM00270M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04841/opgs/edr/ncam/NLB_827252783EDR_F1210762NCAM00270M_.JPG",
+     "photo_azimuth_deg": 318.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.044,
+      "bedrock": 0.954,
+      "sand": 0.002,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.347,
+     "model_confidence": 0.86,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.005,
+     "straight_hazard": 0.061,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 19,
+      "rock_share": 0.075,
+      "smooth_share": 0.031
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4841_121_762_behind",
+     "photo_id": "NLB_827252833EDR_F1210762NCAM00270M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04841/opgs/edr/ncam/NLB_827252833EDR_F1210762NCAM00270M_.JPG",
+     "photo_azimuth_deg": 23.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.017,
+      "bedrock": 0.976,
+      "sand": 0.004,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.9,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.062,
+     "straight_hazard": 0.068,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.046,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4841_121_762_left",
+     "photo_id": "NLB_827253838EDR_F1210762NCAM00271M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04841/opgs/edr/ncam/NLB_827253838EDR_F1210762NCAM00271M_.JPG",
+     "photo_azimuth_deg": 112.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.992,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.014,
+     "model_confidence": 0.93,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.002,
+     "straight_hazard": 0.068,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 20,
+      "rock_share": 0.068,
+      "smooth_share": 0.025
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4844_121_876",
+   "sol": 4844,
+   "lat": -4.81053581,
+   "lon": 137.3816768,
+   "elevation_m": -3595.451,
+   "rover_tilt_deg": 16.57,
+   "drive_m": 11.41,
+   "heading_to_next_deg": 206.0,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4844_121_876_ahead",
+     "photo_id": "NLB_827526056EDR_F1210876NCAM00274M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04844/opgs/edr/ncam/NLB_827526056EDR_F1210876NCAM00274M_.JPG",
+     "photo_azimuth_deg": 246.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.306,
+      "bedrock": 0.605,
+      "sand": 0.0,
+      "big rock": 0.088
+     },
+     "rover_in_view": 0.287,
+     "model_confidence": 0.7,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.027,
+     "straight_hazard": 0.098,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.063,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4844_121_876_behind",
+     "photo_id": "NLB_827524815EDR_F1210876NCAM00273M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04844/opgs/edr/ncam/NLB_827524815EDR_F1210876NCAM00273M_.JPG",
+     "photo_azimuth_deg": 13.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.96,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.015,
+     "straight_hazard": 0.074,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 19,
+      "rock_share": 0.045,
+      "smooth_share": 0.073
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4844_121_876_left",
+     "photo_id": "NLB_827525841EDR_F1210876NCAM00274M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04844/opgs/edr/ncam/NLB_827525841EDR_F1210876NCAM00274M_.JPG",
+     "photo_azimuth_deg": 105.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.996,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.01,
+     "model_confidence": 0.92,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.023,
+     "straight_hazard": 0.045,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 15,
+      "rock_share": 0.062,
+      "smooth_share": 0.026
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4845_121_990",
+   "sol": 4845,
+   "lat": -4.81060029,
+   "lon": 137.3816452,
+   "elevation_m": -3593.697,
+   "rover_tilt_deg": 5.31,
+   "drive_m": 14.32,
+   "heading_to_next_deg": 170.1,
+   "status": "clear",
+   "status_direction": "left",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4845_121_990_right",
+     "photo_id": "NLB_827609375EDR_F1210990NCAM00277M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04845/opgs/edr/ncam/NLB_827609375EDR_F1210990NCAM00277M_.JPG",
+     "photo_azimuth_deg": 267.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.004,
+      "bedrock": 0.996,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.197,
+     "model_confidence": 0.97,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.03,
+     "straight_hazard": 0.105,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there.",
+       "Edge check finds smooth ground on 11% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 8,
+      "rock_share": 0.03,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4845_121_990_behind",
+     "photo_id": "NLB_827609447EDR_F1210990NCAM00277M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04845/opgs/edr/ncam/NLB_827609447EDR_F1210990NCAM00277M_.JPG",
+     "photo_azimuth_deg": 355.4,
+     "status": "caution",
+     "ground": {
+      "soil": 0.005,
+      "bedrock": 0.989,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.009,
+     "model_confidence": 0.87,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.024,
+     "straight_hazard": 0.102,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.042,
+      "smooth_share": 0.006
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4845_121_990_left",
+     "photo_id": "NLB_827608900EDR_F1210990NCAM00276M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04845/opgs/edr/ncam/NLB_827608900EDR_F1210990NCAM00276M_.JPG",
+     "photo_azimuth_deg": 85.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.163,
+      "bedrock": 0.719,
+      "sand": 0.11,
+      "big rock": 0.002
+     },
+     "rover_in_view": 0.008,
+     "model_confidence": 0.79,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.006,
+     "straight_hazard": 0.043,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 23,
+      "rock_share": 0.057,
+      "smooth_share": 0.038
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4848_121_1446",
+   "sol": 4848,
+   "lat": -4.81155245,
+   "lon": 137.3818117,
+   "elevation_m": -3590.118,
+   "rover_tilt_deg": 8.84,
+   "drive_m": 60.2,
+   "heading_to_next_deg": 154.1,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4848_121_1446_ahead",
+     "photo_id": "NLB_827875757EDR_F1211446NCAM00279M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04848/opgs/edr/ncam/NLB_827875757EDR_F1211446NCAM00279M_.JPG",
+     "photo_azimuth_deg": 151.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.033,
+     "model_confidence": 0.99,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.017,
+     "straight_hazard": 0.041,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 15,
+      "rock_share": 0.045,
+      "smooth_share": 0.025
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4848_121_1446_right",
+     "photo_id": "NLB_827875907EDR_F1211446NCAM00279M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04848/opgs/edr/ncam/NLB_827875907EDR_F1211446NCAM00279M_.JPG",
+     "photo_azimuth_deg": 238.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.293,
+     "model_confidence": 1.0,
+     "chosen_path": 6,
+     "straight_path": 4,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.036,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 3,
+      "rock_share": 0.016,
+      "smooth_share": 0.005
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4848_121_1446_behind",
+     "photo_id": "NLB_827874696EDR_F1211446NCAM00278M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04848/opgs/edr/ncam/NLB_827874696EDR_F1211446NCAM00278M_.JPG",
+     "photo_azimuth_deg": 326.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.999,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.121,
+     "model_confidence": 0.99,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.037,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 11% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 9,
+      "rock_share": 0.03,
+      "smooth_share": 0.036
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4848_121_1446_left",
+     "photo_id": "NLB_827874768EDR_F1211446NCAM00278M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04848/opgs/edr/ncam/NLB_827874768EDR_F1211446NCAM00278M_.JPG",
+     "photo_azimuth_deg": 60.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.969,
+      "sand": 0.0,
+      "big rock": 0.029
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.96,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.049,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 16,
+      "rock_share": 0.042,
+      "smooth_share": 0.029
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4851_121_1656",
+   "sol": 4851,
+   "lat": -4.81201523,
+   "lon": 137.3820371,
+   "elevation_m": -3587.992,
+   "rover_tilt_deg": 5.35,
+   "drive_m": 31.3,
+   "heading_to_next_deg": 172.5,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4851_121_1656_ahead",
+     "photo_id": "NLB_828140435EDR_F1211656NCAM00282M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04851/opgs/edr/ncam/NLB_828140435EDR_F1211656NCAM00282M_.JPG",
+     "photo_azimuth_deg": 181.6,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.295,
+     "model_confidence": 0.99,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.011,
+     "straight_hazard": 0.011,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.051,
+      "smooth_share": 0.009
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4851_121_1656_right",
+     "photo_id": "NLB_828140528EDR_F1211656NCAM00282M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04851/opgs/edr/ncam/NLB_828140528EDR_F1211656NCAM00282M_.JPG",
+     "photo_azimuth_deg": 269.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.288,
+     "model_confidence": 0.99,
+     "chosen_path": 0,
+     "straight_path": 3,
+     "chosen_hazard": 0.004,
+     "straight_hazard": 0.14,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 9,
+      "rock_share": 0.05,
+      "smooth_share": 0.004
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4851_121_1656_behind",
+     "photo_id": "NLB_828139298EDR_F1211656NCAM00281M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04851/opgs/edr/ncam/NLB_828139298EDR_F1211656NCAM00281M_.JPG",
+     "photo_azimuth_deg": 1.6,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.002,
+     "model_confidence": 0.99,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.024,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 12,
+      "rock_share": 0.032,
+      "smooth_share": 0.011
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4851_121_1656_left",
+     "photo_id": "NLB_828140296EDR_F1211656NCAM00282M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04851/opgs/edr/ncam/NLB_828140296EDR_F1211656NCAM00282M_.JPG",
+     "photo_azimuth_deg": 93.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.999,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.99,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.027,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.031,
+      "smooth_share": 0.022
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4855_121_2004",
+   "sol": 4855,
+   "lat": -4.81284894,
+   "lon": 137.3821479,
+   "elevation_m": -3583.149,
+   "rover_tilt_deg": 7.52,
+   "drive_m": 50.45,
+   "heading_to_next_deg": 223.3,
+   "status": "clear",
+   "status_direction": "right",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4855_121_2004_right",
+     "photo_id": "NLB_828494768EDR_F1212004NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04855/opgs/edr/ncam/NLB_828494768EDR_F1212004NCAM00285M_.JPG",
+     "photo_azimuth_deg": 302.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.391,
+     "model_confidence": 0.98,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 10,
+      "rock_share": 0.04,
+      "smooth_share": 0.043
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4855_121_2004_behind",
+     "photo_id": "NLB_828493640EDR_F1212004NCAM00284M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04855/opgs/edr/ncam/NLB_828493640EDR_F1212004NCAM00284M_.JPG",
+     "photo_azimuth_deg": 35.5,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.997,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.99,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.006,
+     "straight_hazard": 0.022,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 14,
+      "rock_share": 0.038,
+      "smooth_share": 0.026
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4855_121_2004_left",
+     "photo_id": "NLB_828494529EDR_F1212004NCAM00285M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04855/opgs/edr/ncam/NLB_828494529EDR_F1212004NCAM00285M_.JPG",
+     "photo_azimuth_deg": 126.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.004,
+     "model_confidence": 0.99,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.045,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.021,
+      "smooth_share": 0.004
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4857_121_2202",
+   "sol": 4857,
+   "lat": -4.81316906,
+   "lon": 137.3818456,
+   "elevation_m": -3578.401,
+   "rover_tilt_deg": 12.05,
+   "drive_m": 27.82,
+   "heading_to_next_deg": 263.0,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4857_121_2202_ahead",
+     "photo_id": "NLB_828672294EDR_F1212202NCAM00288M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04857/opgs/edr/ncam/NLB_828672294EDR_F1212202NCAM00288M_.JPG",
+     "photo_azimuth_deg": 254.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.333,
+     "model_confidence": 0.99,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.05,
+     "straight_hazard": 0.08,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 14,
+      "rock_share": 0.066,
+      "smooth_share": 0.021
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4857_121_2202_right",
+     "photo_id": "NLB_828670985EDR_F1212202NCAM00287M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04857/opgs/edr/ncam/NLB_828670985EDR_F1212202NCAM00287M_.JPG",
+     "photo_azimuth_deg": 348.7,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.985,
+      "sand": 0.0,
+      "big rock": 0.011
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.96,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.033,
+     "straight_hazard": 0.045,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 29,
+      "rock_share": 0.066,
+      "smooth_share": 0.019
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4857_121_2202_behind",
+     "photo_id": "NLB_828671072EDR_F1212202NCAM00287M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04857/opgs/edr/ncam/NLB_828671072EDR_F1212202NCAM00287M_.JPG",
+     "photo_azimuth_deg": 82.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.995,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.008,
+     "model_confidence": 0.97,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.014,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.029,
+      "smooth_share": 0.034
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4861_121_2490",
+   "sol": 4861,
+   "lat": -4.81322691,
+   "lon": 137.3813703,
+   "elevation_m": -3579.327,
+   "rover_tilt_deg": 5.37,
+   "drive_m": 29.73,
+   "heading_to_next_deg": 213.2,
+   "status": "clear",
+   "status_direction": "left",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "behind",
+     "name": "sol4861_121_2490_behind",
+     "photo_id": "NLB_829028064EDR_F1212490NCAM00290M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04861/opgs/edr/ncam/NLB_829028064EDR_F1212490NCAM00290M_.JPG",
+     "photo_azimuth_deg": 46.2,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.017,
+     "model_confidence": 0.99,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.001,
+     "straight_hazard": 0.001,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 13,
+      "rock_share": 0.034,
+      "smooth_share": 0.055
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4861_121_2490_left",
+     "photo_id": "NLB_829029034EDR_F1212490NCAM00291M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04861/opgs/edr/ncam/NLB_829029034EDR_F1212490NCAM00291M_.JPG",
+     "photo_azimuth_deg": 134.9,
+     "status": "clear",
+     "ground": {
+      "soil": 0.005,
+      "bedrock": 0.989,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.95,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.019,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 10,
+      "rock_share": 0.032,
+      "smooth_share": 0.067
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4865_121_2826",
+   "sol": 4865,
+   "lat": -4.81378952,
+   "lon": 137.3810006,
+   "elevation_m": -3574.228,
+   "rover_tilt_deg": 9.09,
+   "drive_m": 41.7,
+   "heading_to_next_deg": 124.2,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4865_121_2826_ahead",
+     "photo_id": "NLB_829385226EDR_F1212826NCAM00294M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04865/opgs/edr/ncam/NLB_829385226EDR_F1212826NCAM00294M_.JPG",
+     "photo_azimuth_deg": 136.7,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.997,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.98,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.024,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 11,
+      "rock_share": 0.033,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4865_121_2826_behind",
+     "photo_id": "NLB_829383862EDR_F1212826NCAM00293M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04865/opgs/edr/ncam/NLB_829383862EDR_F1212826NCAM00293M_.JPG",
+     "photo_azimuth_deg": 314.9,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.986,
+      "sand": 0.013,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.323,
+     "model_confidence": 0.94,
+     "chosen_path": 6,
+     "straight_path": 4,
+     "chosen_hazard": 0.032,
+     "straight_hazard": 0.038,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 9,
+      "rock_share": 0.029,
+      "smooth_share": 0.014
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4865_121_2826_left",
+     "photo_id": "NLB_829383958EDR_F1212826NCAM00293M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04865/opgs/edr/ncam/NLB_829383958EDR_F1212826NCAM00293M_.JPG",
+     "photo_azimuth_deg": 49.0,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.772,
+      "sand": 0.225,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.92,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.003,
+     "straight_hazard": 0.069,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 22,
+      "rock_share": 0.062,
+      "smooth_share": 0.084
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4868_122_0",
+   "sol": 4868,
+   "lat": -4.8142672,
+   "lon": 137.3817063,
+   "elevation_m": -3570.45,
+   "rover_tilt_deg": 8.49,
+   "drive_m": 56.36,
+   "heading_to_next_deg": 144.6,
+   "status": "clear",
+   "status_direction": "ahead",
+   "safest_direction": "ahead",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4868_122_0_ahead",
+     "photo_id": "NLB_829654214EDR_F1220000NCAM00298M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04868/opgs/edr/ncam/NLB_829654214EDR_F1220000NCAM00298M_.JPG",
+     "photo_azimuth_deg": 156.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.997,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.023,
+     "model_confidence": 0.99,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.007,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 7,
+      "rock_share": 0.024,
+      "smooth_share": 0.021
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4868_122_0_right",
+     "photo_id": "NLB_829654360EDR_F1220000NCAM00298M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04868/opgs/edr/ncam/NLB_829654360EDR_F1220000NCAM00298M_.JPG",
+     "photo_azimuth_deg": 243.3,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.35,
+     "model_confidence": 1.0,
+     "chosen_path": 6,
+     "straight_path": 4,
+     "chosen_hazard": 0.056,
+     "straight_hazard": 0.146,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 6% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 5,
+      "rock_share": 0.027,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4868_122_0_left",
+     "photo_id": "NLB_829653227EDR_F1220000NCAM00297M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04868/opgs/edr/ncam/NLB_829653227EDR_F1220000NCAM00297M_.JPG",
+     "photo_azimuth_deg": 68.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.998,
+      "sand": 0.0,
+      "big rock": 0.001
+     },
+     "rover_in_view": 0.008,
+     "model_confidence": 0.99,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.002,
+     "straight_hazard": 0.012,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 14,
+      "rock_share": 0.031,
+      "smooth_share": 0.012
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4889_122_138",
+   "sol": 4889,
+   "lat": -4.81444561,
+   "lon": 137.3818334,
+   "elevation_m": -3568.867,
+   "rover_tilt_deg": 11.03,
+   "drive_m": 13.88,
+   "heading_to_next_deg": 305.7,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "behind",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4889_122_138_ahead",
+     "photo_id": "NLB_831507564EDR_F1220138NCAM00250M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04889/opgs/edr/ncam/NLB_831507564EDR_F1220138NCAM00250M_.JPG",
+     "photo_azimuth_deg": 317.5,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.993,
+      "sand": 0.0,
+      "big rock": 0.006
+     },
+     "rover_in_view": 0.282,
+     "model_confidence": 0.98,
+     "chosen_path": 6,
+     "straight_path": 4,
+     "chosen_hazard": 0.047,
+     "straight_hazard": 0.217,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 5% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 15,
+      "rock_share": 0.071,
+      "smooth_share": 0.033
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4889_122_138_right",
+     "photo_id": "NLB_831507620EDR_F1220138NCAM00250M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04889/opgs/edr/ncam/NLB_831507620EDR_F1220138NCAM00250M_.JPG",
+     "photo_azimuth_deg": 22.2,
+     "status": "caution",
+     "ground": {
+      "soil": 0.01,
+      "bedrock": 0.987,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.003,
+     "model_confidence": 0.96,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.045,
+     "straight_hazard": 0.081,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 4% of the chosen path; the model sees no big rock there."
+      ],
+      "rocks_found": 16,
+      "rock_share": 0.058,
+      "smooth_share": 0.004
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4889_122_138_behind",
+     "photo_id": "NLB_831508065EDR_F1220138NCAM00251M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04889/opgs/edr/ncam/NLB_831508065EDR_F1220138NCAM00251M_.JPG",
+     "photo_azimuth_deg": 113.1,
+     "status": "caution",
+     "ground": {
+      "soil": 0.015,
+      "bedrock": 0.976,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.007,
+     "model_confidence": 0.96,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.001,
+     "straight_hazard": 0.001,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 9% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 5,
+      "rock_share": 0.013,
+      "smooth_share": 0.105
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4891_122_360",
+   "sol": 4891,
+   "lat": -4.81427973,
+   "lon": 137.3816021,
+   "elevation_m": -3570.568,
+   "rover_tilt_deg": 5.65,
+   "drive_m": 23.83,
+   "heading_to_next_deg": 190.1,
+   "status": "caution",
+   "status_direction": "ahead",
+   "safest_direction": "right",
+   "views": [
+    {
+     "direction": "ahead",
+     "name": "sol4891_122_360_ahead",
+     "photo_id": "NLB_831689753EDR_F1220360NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04891/opgs/edr/ncam/NLB_831689753EDR_F1220360NCAM00254M_.JPG",
+     "photo_azimuth_deg": 177.6,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.263,
+     "model_confidence": 1.0,
+     "chosen_path": 2,
+     "straight_path": 3,
+     "chosen_hazard": 0.03,
+     "straight_hazard": 0.057,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds rock shadows on 3% of the chosen path; the model sees no big rock there.",
+       "Edge check finds smooth ground on 9% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 3,
+      "rock_share": 0.014,
+      "smooth_share": 0.028
+     }
+    },
+    {
+     "direction": "right",
+     "name": "sol4891_122_360_right",
+     "photo_id": "NLB_831689898EDR_F1220360NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04891/opgs/edr/ncam/NLB_831689898EDR_F1220360NCAM00254M_.JPG",
+     "photo_azimuth_deg": 266.4,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.334,
+     "model_confidence": 0.99,
+     "chosen_path": 1,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.047,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.032,
+      "smooth_share": 0.0
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4891_122_360_behind",
+     "photo_id": "NLB_831688877EDR_F1220360NCAM00253M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04891/opgs/edr/ncam/NLB_831688877EDR_F1220360NCAM00253M_.JPG",
+     "photo_azimuth_deg": 359.3,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.995,
+      "sand": 0.0,
+      "big rock": 0.002
+     },
+     "rover_in_view": 0.005,
+     "model_confidence": 0.99,
+     "chosen_path": 6,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.047,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 8,
+      "rock_share": 0.031,
+      "smooth_share": 0.018
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4891_122_360_left",
+     "photo_id": "NLB_831689673EDR_F1220360NCAM00254M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04891/opgs/edr/ncam/NLB_831689673EDR_F1220360NCAM00254M_.JPG",
+     "photo_azimuth_deg": 89.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.983,
+      "sand": 0.0,
+      "big rock": 0.014
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.97,
+     "chosen_path": 4,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.012,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 8% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 10,
+      "rock_share": 0.027,
+      "smooth_share": 0.033
+     }
+    }
+   ]
+  },
+  {
+   "id": "sol4893_122_462",
+   "sol": 4893,
+   "lat": -4.81439703,
+   "lon": 137.3815811,
+   "elevation_m": -3569.59,
+   "rover_tilt_deg": 6.71,
+   "drive_m": 8.39,
+   "heading_to_next_deg": 190.1,
+   "status": "clear",
+   "status_direction": "left",
+   "safest_direction": "left",
+   "views": [
+    {
+     "direction": "right",
+     "name": "sol4893_122_462_right",
+     "photo_id": "NLB_831874218EDR_F1220462NCAM00256M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04893/opgs/edr/ncam/NLB_831874218EDR_F1220462NCAM00256M_.JPG",
+     "photo_azimuth_deg": 286.0,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 1.0,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.368,
+     "model_confidence": 0.99,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.004,
+     "straight_hazard": 0.004,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 5,
+      "rock_share": 0.033,
+      "smooth_share": 0.014
+     }
+    },
+    {
+     "direction": "behind",
+     "name": "sol4893_122_462_behind",
+     "photo_id": "NLB_831874297EDR_F1220462NCAM00256M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04893/opgs/edr/ncam/NLB_831874297EDR_F1220462NCAM00256M_.JPG",
+     "photo_azimuth_deg": 18.8,
+     "status": "caution",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.997,
+      "sand": 0.0,
+      "big rock": 0.0
+     },
+     "rover_in_view": 0.006,
+     "model_confidence": 0.97,
+     "chosen_path": 5,
+     "straight_path": 3,
+     "chosen_hazard": 0.006,
+     "straight_hazard": 0.052,
+     "edge_check": {
+      "agreement": "disagree",
+      "notes": [
+       "Edge check finds smooth ground on 10% of the chosen path; the model does not call it sand."
+      ],
+      "rocks_found": 24,
+      "rock_share": 0.06,
+      "smooth_share": 0.055
+     }
+    },
+    {
+     "direction": "left",
+     "name": "sol4893_122_462_left",
+     "photo_id": "NLB_831875007EDR_F1220462NCAM00257M_",
+     "photo_url": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04893/opgs/edr/ncam/NLB_831875007EDR_F1220462NCAM00257M_.JPG",
+     "photo_azimuth_deg": 110.1,
+     "status": "clear",
+     "ground": {
+      "soil": 0.0,
+      "bedrock": 0.995,
+      "sand": 0.0,
+      "big rock": 0.002
+     },
+     "rover_in_view": 0.019,
+     "model_confidence": 0.99,
+     "chosen_path": 3,
+     "straight_path": 3,
+     "chosen_hazard": 0.0,
+     "straight_hazard": 0.0,
+     "edge_check": {
+      "agreement": "agree",
+      "notes": [],
+      "rocks_found": 6,
+      "rock_share": 0.02,
+      "smooth_share": 0.031
+     }
+    }
+   ]
+  }
+ ]
+}

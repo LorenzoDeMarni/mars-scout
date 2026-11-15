@@ -12,14 +12,16 @@ PREPARED = ROOT / "data/prepared"
 CHECKPOINTS = ROOT / "checkpoints"
 
 SIZE = 512
-CLASSES = ["soil", "bedrock", "sand", "big rock"]
+CLASSES = ["soil", "bedrock", "sand", "big rock"]  # the terrain classes that are scored
+ROVER = 4  # extra output class: rover hardware in view, learned from AI4Mars rover masks
+N_OUT = 5
 IGNORE = 255
 
 
 def build_model():
     # U-Net with an ImageNet-pretrained ResNet-34 encoder. Photos are greyscale,
     # repeated to 3 channels so the pretrained first layer can be reused.
-    return smp.Unet("resnet34", encoder_weights="imagenet", in_channels=3, classes=len(CLASSES))
+    return smp.Unet("resnet34", encoder_weights="imagenet", in_channels=3, classes=N_OUT)
 
 
 def to_input(grey):
@@ -56,20 +58,22 @@ class Shards(Dataset):
 
 
 class Confusion:
-    """Confusion matrix over labeled pixels only."""
+    """Confusion matrix over labeled pixels only. Scores the four terrain classes;
+    a terrain pixel predicted as rover counts as an error."""
 
     def __init__(self):
-        self.m = torch.zeros(len(CLASSES), len(CLASSES), dtype=torch.long)
+        self.m = torch.zeros(N_OUT, N_OUT, dtype=torch.long)
 
     def add(self, pred, target):
         keep = target != IGNORE
-        k = len(CLASSES)
-        self.m += torch.bincount(target[keep] * k + pred[keep], minlength=k * k).reshape(k, k).cpu()
+        self.m += torch.bincount(target[keep] * N_OUT + pred[keep], minlength=N_OUT * N_OUT).reshape(N_OUT, N_OUT).cpu()
 
     def report(self):
+        k = len(CLASSES)
         m = self.m.double()
-        tp = m.diag()
-        iou = tp / (m.sum(0) + m.sum(1) - tp).clamp(min=1)
+        tp = m.diag()[:k]
+        iou = tp / (m.sum(0)[:k] + m.sum(1)[:k] - tp).clamp(min=1)
+        m = m[:k]  # rows = true terrain pixels
         return {
             "pixel_accuracy": (tp.sum() / m.sum().clamp(min=1)).item(),
             "mean_iou": iou.mean().item(),

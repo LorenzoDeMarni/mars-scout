@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mars Scout: Marswalk planner</title>
+<meta name="description" content="A Marswalk planner for Mount Sharp, Gale Crater. A robotic scout checks the ground ahead of the astronaut, using NASA data.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Mars Scout</h1>
+    <p class="sub">Marswalk planner · boxwork ridges, Mount Sharp, Gale Crater</p>
+  </div>
+  <div class="headline" aria-label="Walk summary">
+    <div><b id="stat-distance">–</b><span>route</span></div>
+    <div><b id="stat-time">–</b><span>walking (est.)</span></div>
+    <div><b id="stat-pins">–</b><span>scout stops</span></div>
+    <div><b id="stat-photos">–</b><span>NASA photos checked</span></div>
+    <div><b id="stat-acc">–</b><span>model accuracy</span></div>
+  </div>
+  <div class="actions">
+    <span class="replay" title="The scout is a replay of a real Curiosity drive. Terrain labels are model predictions and times are estimates.">
+      Replay of Curiosity, <span id="sol-range"></span></span>
+    <button id="btn-tour" class="primary">▶ 30-second tour</button>
+  </div>
+</header>
+
+<main>
+  <div id="mapwrap">
+    <div id="map" aria-label="Map of the walk area"></div>
+    <div id="caption" hidden>
+      <p id="caption-text"></p>
+      <div class="caption-row">
+        <span id="caption-count"></span>
+        <span>
+          <button id="tour-back">Back</button>
+          <button id="tour-next" class="primary">Next</button>
+          <button id="tour-end">End tour</button>
+        </span>
+      </div>
+      <div id="caption-progress"><i></i></div>
+    </div>
+
+    <div id="timeline">
+      <div class="tl-buttons">
+        <button id="tl-prev" title="Previous stop (left arrow)" aria-label="Previous stop">◀</button>
+        <button id="tl-play" class="primary" title="Play the whole walk" aria-label="Play the walk">▶</button>
+        <button id="tl-next" title="Next stop (right arrow)" aria-label="Next stop">▶▶</button>
+      </div>
+      <div class="tl-main">
+        <div class="tl-row"><span class="tl-name">Scout</span><div id="tl-scout" class="tl-strip"></div></div>
+        <div class="tl-row"><span class="tl-name">Orbit</span><div id="tl-orbit" class="tl-strip thin"></div></div>
+        <p id="tl-label"></p>
+      </div>
+    </div>
+  </div>
+
+  <aside>
+    <nav class="ptabs" role="tablist">
+      <button data-tab="scout" class="on">Scout report</button>
+      <button data-tab="env">Environment</button>
+      <button data-tab="about">How it works</button>
+    </nav>
+
+    <div id="tab-scout" class="tab">
+      <section id="pin">
+        <div class="pin-head">
+          <h2 id="pin-title">Loading…</h2>
+          <span id="pin-status" class="badge"></span>
+        </div>
+        <p id="pin-science" class="science" hidden></p>
+        <div id="verdict" class="verdict">
+          <strong id="verdict-word"></strong>
+          <p id="pin-verdict"></p>
+        </div>
+
+        <h3>Look around</h3>
+        <div class="tabs dirs" id="dirs"></div>
+        <p class="small" id="dir-note"></p>
+
+        <div class="tabs" id="views">
+          <button data-view="paths" class="on">Scout's path</button>
+          <button data-view="edge">Edge check</button>
+          <button data-view="photo">Photo</button>
+        </div>
+        <img id="pin-image" alt="">
+        <ul class="legend classes" id="image-legend"></ul>
+
+        <h3>Two independent checks</h3>
+        <div class="checks">
+          <div><label>AI terrain model</label><b id="chk-model">–</b><span>sand or big rock in view</span></div>
+          <div><label>Edge check (no AI)</label><b id="chk-edge">–</b><span>rock shadows outlined</span></div>
+        </div>
+        <p id="chk-agree" class="agree"></p>
+        <ul id="edge-notes" class="notes"></ul>
+
+        <h3>Ground in view (model)</h3>
+        <div id="ground-bar" class="bar"></div>
+        <p id="ground-text" class="small"></p>
+
+        <h3 id="safety-head">Safety at this point</h3>
+        <div class="stats two" id="safety-tiles"></div>
+        <details><summary>All readings at this stop</summary><dl id="safety"></dl></details>
+        <p class="small"><a id="pin-source" target="_blank" rel="noopener">Original NASA photo</a>
+          · <span id="pin-conf"></span></p>
+      </section>
+    </div>
+
+    <div id="tab-env" class="tab" hidden>
+      <section id="environment">
+        <h2>Environment on the walk</h2>
+        <div class="stats two">
+          <div><span id="env-air">–</span><label>air temperature range</label></div>
+          <div><span id="env-ground">–</span><label>ground temperature range</label></div>
+          <div><span id="env-pressure">–</span><label>air pressure</label></div>
+          <div><span id="env-daylight">–</span><label>daylight per sol</label></div>
+        </div>
+        <p class="small" id="env-sky"></p>
+
+        <h3>Air temperature by sol (Curiosity REMS)</h3>
+        <ul class="legend">
+          <li><i class="swatch" style="background:#d95926"></i>Daily high</li>
+          <li><i class="swatch" style="background:#3987e5"></i>Daily low</li>
+        </ul>
+        <div id="chart-temp"></div>
+        <details><summary>Table</summary><div class="table-wrap"><table id="table-temp"></table></div></details>
+        <p class="small">Readings are shown as NASA publishes them. A few sols report air lows near −100 °C, colder
+          than the ground reading for the same sol, and one sol reports a high of −59 °C. These may be sensor
+          or partial-day artefacts, so read the chart for the overall range, not single sols.</p>
+
+        <h3>Elevation along the route</h3>
+        <div id="chart-elev"></div>
+        <p class="small" id="elev-text"></p>
+
+        <h3>Steep ground and drop-offs (from orbit)</h3>
+        <div class="stats two">
+          <div><span id="terr-caution">–</span><label>of the area is caution slope</label></div>
+          <div><span id="terr-avoid">–</span><label>of the area is avoid slope or drop-off</label></div>
+          <div><span id="terr-legs">–</span><label>route legs: gentle / caution / avoid</label></div>
+          <div><span id="terr-max">–</span><label>steepest slope in the area</label></div>
+        </div>
+        <p class="small" id="terr-text"></p>
+        <p class="small" id="terr-valid"></p>
+
+        <h3>Radiation</h3>
+        <div class="stats two">
+          <div><span id="rad-day">–</span><label>per day on the surface</label></div>
+          <div><span id="rad-eva">–</span><label>per 8-hour Marswalk</label></div>
+          <div><span id="rad-walk">–</span><label>for this walk</label></div>
+          <div><span id="rad-earth">–</span><label>Earth's natural background</label></div>
+        </div>
+        <p class="small" id="rad-text"></p>
+      </section>
+    </div>
+
+    <div id="tab-about" class="tab" hidden>
+      <section>
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><b>Plan from orbit.</b> NASA's 1 m elevation model marks steep ground and drop-offs before anyone sets out.</li>
+          <li><b>Send the scout.</b> At each stop it photographs the ground in up to four directions. Here the scout is a replay of Curiosity's real drive.</li>
+          <li><b>Check twice.</b> An AI model trained on NASA's AI4Mars labels classifies the terrain. A separate edge check with no AI looks for rock shadows and smooth sand.</li>
+          <li><b>Pick a path.</b> Seven candidate paths are scored in each photo. The safest is green. If the two checks disagree, the stop is never marked clear.</li>
+          <li><b>Brief the astronaut.</b> Each stop shows the time to walk back, the weather Curiosity measured there, slope and radiation dose.</li>
+        </ol>
+        <button id="btn-intro" class="ghost">Show the welcome screen again</button>
+      </section>
+
+      <section>
+        <h2>Model report card</h2>
+        <p class="small">Scored on NASA's expert-labeled AI4Mars test set (322 images the model never saw in training,
+          labeled pixels only).</p>
+        <div class="stats two">
+          <div><span id="m-acc">–</span><label>pixel accuracy</label></div>
+          <div><span id="m-miou">–</span><label>mean IoU over 4 classes</label></div>
+        </div>
+        <h3>Overlap with expert labels, by class (IoU)</h3>
+        <div id="m-bars" class="hbars"></div>
+        <p class="small" id="m-note"></p>
+      </section>
+
+      <section id="limits">
+        <h2>Limits</h2>
+        <ul id="assumptions"></ul>
+        <ul>
+          <li>The edge check finds rocks by their shadows and smooth ground by its lack of texture. It has
+            not been scored against labels. It can mistake a shadowed step in bedrock for a rock, and it
+            misses rocks that cast no shadow.</li>
+          <li>The model only judges ground within about 30 m. Dimmed areas of each photo are ignored:
+            the distance, the sky, and rover hardware (which the model recognises itself).</li>
+          <li>Pin colour is the view ahead, toward the next stop, or the safest other view where that photo is unusable.</li>
+        </ul>
+        <h2>NASA data</h2>
+        <ul>
+          <li>Basemap: MRO HiRISE Curiosity roving site mosaic and MRO CTX Gale Crater mosaic, via Mars Trek</li>
+          <li>Photos and positions: Curiosity navigation cameras and waypoints (NASA/JPL-Caltech)</li>
+          <li>Elevation: MSL Gale DEM mosaic, 1 m, from MRO HiRISE stereo (USGS Astrogeology / NASA PDS)</li>
+          <li>Terrain model training data: AI4Mars (NASA JPL)</li>
+          <li>Weather: Curiosity REMS · Radiation: Curiosity RAD</li>
+        </ul>
+        <p class="small" id="traverse-note"></p>
+        <p class="small">Code and AI-use log:
+          <a href="https://github.com/LorenzoDeMarni/mars-scout" target="_blank" rel="noopener">github.com/LorenzoDeMarni/mars-scout</a>.
+          This project was built with AI assistance; see AI_LOG.md in the repository.</p>
+      </section>
+    </div>
+  </aside>
+</main>
+
+<div id="intro" hidden>
+  <div class="intro-card" role="dialog" aria-labelledby="intro-title">
+    <p class="kicker">NASA Space Apps 2026 · Interplanetary Survival Guide: Martian Map</p>
+    <h2 id="intro-title">Before an astronaut walks on Mars, a scout checks the ground.</h2>
+    <p class="lead">Mars Scout plans a <span id="intro-km">1 km</span> Marswalk across the boxwork ridges of Mount Sharp.
+      A robot goes first, looks around at every stop and reports what is safe.</p>
+    <div class="intro-steps">
+      <figure><img id="intro-img1" alt="Curiosity navigation camera photo of the ground">
+        <figcaption><b>1. Look.</b> The scout photographs the ground. These are real Curiosity photos.</figcaption></figure>
+      <figure><img id="intro-img2" alt="The same photo with terrain colours and candidate paths">
+        <figcaption><b>2. Classify.</b> An AI model trained on NASA's AI4Mars data colours the terrain and picks the safest path.</figcaption></figure>
+      <figure><img id="intro-img3" alt="The same photo with rock shadows outlined">
+        <figcaption><b>3. Double-check.</b> A second method with no AI outlines rocks. If they disagree, the stop is never "clear".</figcaption></figure>
+    </div>
+    <p class="lead small-lead">The map adds steep ground and drop-offs from orbit, weather from Curiosity's own
+      station, radiation dose and the time to walk back.</p>
+    <div class="intro-actions">
+      <button id="intro-tour" class="primary big">▶ Take the 30-second tour</button>
+      <button id="intro-explore" class="ghost big">Explore the map</button>
+    </div>
+    <p class="honest"><b>Replay, not live.</b> The scout replays a real Curiosity drive (2025–2026). Terrain labels are
+      model predictions, and walking times are estimates.</p>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

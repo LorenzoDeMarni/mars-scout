@@ -13,4 +13,6 @@ dependencies = [
     "datasets",
     "huggingface-hub",
     "tqdm",
+    "opencv-python-headless>=5.0.0.93",
+    "rasterio>=1.4.4",
 ]
