@@ -12,3 +12,4 @@ checkpoints/
 # presentation and submission-form material, kept out of the repo
 slides/
 submission/
+docs/*.pptx

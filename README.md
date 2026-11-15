@@ -1,21 +1,24 @@
-# Mars Scout
+# Scout Ahead
 
-A Marswalk planner for the boxwork ridges of Mount Sharp, Gale Crater. A robotic scout checks the ground ahead of the astronaut and pins what it finds on the map.
+**Know the ground before you walk.** A Marswalk planner for the boxwork ridges of Mount Sharp, Gale Crater. A robotic scout checks the ground ahead of the astronaut and pins what it finds on the map.
 
-Built for the NASA Space Apps Challenge 2026, "Interplanetary Survival Guide: Martian Map".
+[**Live demo**](https://lorenzodemarni.github.io/mars-scout/) · [**30-second video**](https://lorenzodemarni.github.io/mars-scout/demo.mp4) · NASA Space Apps Challenge 2026, "Interplanetary Survival Guide: Martian Map"
 
-- **Live demo:** https://lorenzodemarni.github.io/mars-scout/
-- **30-second video:** https://lorenzodemarni.github.io/mars-scout/demo.mp4
+[![The Scout Ahead map: the scouted route on Mount Sharp, with the scout's report for Stop A](docs/img/hero.jpg)](https://lorenzodemarni.github.io/mars-scout/)
 
-The scout is a replay of a real Curiosity drive (sols 4600–4893, 2025–2026). It is not a live feed.
+> The scout is a replay of a real Curiosity drive (sols 4600–4893, 2025–2026). It is not a live feed.
 
-## What it does
+## How it works
 
-1. **Plans from orbit.** NASA's 1 m HiRISE elevation model marks steep ground and drop-offs around the walk, and rates every leg of the route.
-2. **Sends a scout.** At each of 60 rover stops the scout looks at up to four navigation camera photos: ahead, right, behind and left.
-3. **Checks the ground twice.** A segmentation model trained on NASA's AI4Mars labels classifies each photo into soil, bedrock, sand and big rock. A separate edge check with no machine learning finds rock shadows and smooth ground. If the two disagree, the stop is never marked clear.
-4. **Picks a path.** Seven candidate paths are scored in each photo by the share of sand and rock they cross. The safest is drawn in green and the others in red.
-5. **Briefs the astronaut.** Each stop shows a go / go with care / no go verdict, the time to walk back, the weather Curiosity measured on that sol, slope, and radiation dose so far.
+![One Curiosity photo three ways: raw, classified by the AI model with candidate paths, and checked by the edge detector](docs/img/pipeline.jpg)
+
+1. **Plan from orbit.** NASA's 1 m HiRISE elevation model marks steep ground and drop-offs around the walk, and rates every leg of the route.
+2. **Send a scout.** At each of 60 rover stops the scout looks at up to four navigation camera photos: ahead, right, behind and left.
+3. **Check the ground twice.** A segmentation model trained on NASA's AI4Mars labels classifies each photo into soil, bedrock, sand and big rock. A separate edge check with no machine learning finds rock shadows and smooth ground. If the two disagree, the stop is never marked clear.
+4. **Pick a path.** Seven candidate paths are scored in each photo by the share of sand and rock they cross. The safest is drawn in green and the others in red.
+5. **Brief the astronaut.** Each stop shows a go / go with care / no go verdict, the time to walk back, the weather Curiosity measured on that sol, slope, and radiation dose so far.
+
+![Steep ground and drop-offs from orbit, in yellow and red, around the scouted route](docs/img/hazards.jpg)
 
 ## Results
 
@@ -28,6 +31,18 @@ The scout is a replay of a real Curiosity drive (sols 4600–4893, 2025–2026).
 | Model mean IoU | 0.67 (soil 0.91, bedrock 0.81, sand 0.86, big rock 0.11) |
 | Orbital elevation vs Curiosity's own | within 0.4 m at all 60 stops |
 
+## NASA data used
+
+| Data | Source |
+|---|---|
+| Terrain labels for training and testing | [AI4Mars](https://data.nasa.gov/dataset/ai4mars-a-dataset-for-terrain-aware-autonomous-driving-on-mars) (NASA JPL), via the Hugging Face mirror [`hassanjbara/AI4MARS`](https://huggingface.co/datasets/hassanjbara/AI4MARS) |
+| Rover stops | [Curiosity waypoints](https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json) (NASA/JPL-Caltech) |
+| Scout photos | [Curiosity raw images](https://mars.nasa.gov/msl/multimedia/raw-images/), left navigation camera |
+| Basemap | MRO HiRISE and CTX mosaics of Gale Crater, tiles from [Mars Trek](https://trek.nasa.gov/mars/) |
+| Elevation | [MSL Gale merged DEM, 1 m](https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m_v3), from MRO HiRISE stereo (USGS Astrogeology) |
+| Weather | Curiosity REMS, from the [`mars.nasa.gov` weather feed](https://mars.nasa.gov/rss/api/?feed=weather&category=msl&feedtype=json) |
+| Radiation | Curiosity RAD surface average (Hassler et al., Science, 2014) |
+
 ## Limits
 
 - The scout is a replay. Photos, positions and weather are Curiosity's, recorded in 2025–2026.
@@ -38,18 +53,6 @@ The scout is a replay of a real Curiosity drive (sols 4600–4893, 2025–2026).
 - Slope from orbit agrees only moderately with rover tilt on the ground (correlation 0.41), so it is a guide to steep areas, not an exact value.
 - Radiation is a long-term average from Curiosity RAD (0.67 mSv/day), not a live reading. There are no solar storm alerts.
 - NASA's weather feed contains a few suspicious readings. They are shown as published, with a note.
-
-## NASA data used
-
-| Data | Source |
-|---|---|
-| Terrain labels for training and testing | [AI4Mars](https://data.nasa.gov/dataset/ai4mars-a-dataset-for-terrain-aware-autonomous-driving-on-mars) (NASA JPL), Curiosity subset, via the Hugging Face mirror `hassanjbara/AI4MARS` |
-| Rover stops | [Curiosity waypoints](https://mars.nasa.gov/mmgis-maps/MSL/Layers/json/MSL_waypoints.json) (NASA/JPL-Caltech) |
-| Scout photos | Curiosity left navigation camera, from the `mars.nasa.gov` raw image API |
-| Basemap | MRO HiRISE Curiosity mosaic and MRO CTX Gale mosaic, tiles from [Mars Trek](https://trek.nasa.gov/mars/) |
-| Elevation | MSL Gale DEM mosaic, 1 m, from MRO HiRISE stereo (USGS Astrogeology / NASA PDS) |
-| Weather | Curiosity REMS, from the `mars.nasa.gov` weather feed |
-| Radiation | Curiosity RAD surface average (Hassler et al., Science, 2014) |
 
 ## Repository layout
 
@@ -86,6 +89,8 @@ uv run python scout/terrain_hazards.py  # slope and drop-off overlay
 python3 -m http.server 8765 --directory docs
 ```
 
+Built with Python, PyTorch, segmentation-models-pytorch, OpenCV, rasterio and Leaflet.
+
 ## AI use
 
-This project was built with AI assistance (Claude Code). The code, the page and this README were AI-generated under the author's direction and reviewed by the author. See [AI_LOG.md](AI_LOG.md) for the full list.
+This project was built with AI assistance (Claude Code). The code, the page and this README were AI-generated under the author's direction and reviewed by the author. See [AI_LOG.md](AI_LOG.md) for the full list. No AI-generated images are used: every photo is NASA's.

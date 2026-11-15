@@ -1,4 +1,4 @@
-// Mars Scout map. Reads the JSON files in data/, all written ahead of time by scout/ and model/.
+// Scout Ahead map. Reads the JSON files in data/, all written ahead of time by scout/ and model/.
 const STATUS_COLOR = { clear: "#3ecf6e", caution: "#f2b632", blocked: "#e5484d" };
 const STATUS_WORD = { clear: "Go", caution: "Go with care", blocked: "No go" };
 const LEG_COLOR = { ok: "#3ecf6e", caution: "#f2b632", avoid: "#e5484d" };
